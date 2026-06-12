@@ -14,7 +14,12 @@ pub struct EmbeddedRelayServer {
 }
 
 impl EmbeddedRelayServer {
-    pub fn start(repo_path: &Path, repo_name: &str, branch: &str) -> Result<Self> {
+    pub fn start(
+        repo_path: &Path,
+        repo_name: &str,
+        branch: &str,
+        extra_env: &[(&str, &str)],
+    ) -> Result<Self> {
         let port = pick_port()?;
         let bind = format!("127.0.0.1:{port}");
         let gateway = find_gateway_binary()?;
@@ -30,6 +35,9 @@ impl EmbeddedRelayServer {
             .env("RELAY_PUBLIC_HOSTNAME", "localhost")
             .stdout(Stdio::null())
             .stderr(Stdio::null());
+        for (k, v) in extra_env {
+            cmd.env(k, v);
+        }
 
         let child = cmd.spawn().with_context(|| format!("spawn {gateway:?}"))?;
 

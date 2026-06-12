@@ -1,0 +1,134 @@
+# relay-server monorepo — relay-gateway tests, Linode tarball, GitLab Container Registry
+# https://gitlab.com/clevertree/relay-server
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_TAG
+
+variables:
+  RUST_VERSION: "1.91"
+  CARGO_HOME: "$CI_PROJECT_DIR/.cargo-cache"
+  DOCKER_IMAGE: "$CI_REGISTRY_IMAGE/relay-gateway"
+  DOCKERFILE: "relay-gateway/Dockerfile.production"
+
+stages:
+  - test
+  - package
+  - docker
+
+cache:
+  key: "${CI_COMMIT_REF_SLUG}-cargo"
+  paths:
+    - .cargo-cache/registry/
+    - .cargo-cache/git/
+    - relay-gateway/target/
+
+test:verify:
+  stage: test
+  image: rust:${RUST_VERSION}-bookworm
+  before_script:
+    - export PATH="/usr/local/cargo/bin:$PATH"
+    - apt-get update -qq && apt-get install -y -qq curl jq nodejs
+    - relay-gateway/scripts/ci-clone-path-deps.sh
+  script:
+    - cd relay-gateway
+    - cargo test --locked
+    - cargo build --release --locked
+    - mkdir -p ci-data
+    - |
+      RELAY_REPO_PATH="$CI_PROJECT_DIR/relay-gateway/ci-data" RELAY_BIND=127.0.0.1:18080 ./target/release/relay-gateway &
+      RELAY_PID=$!
+      for i in $(seq 1 30); do
+        curl -sfS -X POST "http://127.0.0.1:18080/api/config" >/dev/null && break
+        sleep 0.2
+      done
+      curl -sfS -X POST "http://127.0.0.1:18080/api/config" | jq -e 'type == "object"'
+      kill $RELAY_PID
+      wait $RELAY_PID 2>/dev/null || true
+
+package:linode-tgz:
+  stage: package
+  needs: ["test:verify"]
+  image: rust:${RUST_VERSION}-bookworm
+  before_script:
+    - export PATH="/usr/local/cargo/bin:$PATH"
+    - relay-gateway/scripts/ci-clone-path-deps.sh
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^v/
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - cd relay-gateway && ./scripts/pack-linode-deploy.sh
+  artifacts:
+    name: "relay-linode-deploy-$CI_COMMIT_SHORT_SHA"
+    paths:
+      - relay-gateway/target/relay-linode-deploy.tgz
+    expire_in: 30 days
+
+# Stage flat build context on a full Debian image (Kaniko lacks git/rsync).
+docker:prepare-context:
+  stage: docker
+  needs: ["test:verify"]
+  image: rust:${RUST_VERSION}-bookworm
+  before_script:
+    - export PATH="/usr/local/cargo/bin:$PATH"
+    - apt-get update -qq && apt-get install -y -qq git rsync
+    - chmod +x relay-gateway/scripts/ci-ensure-deps.sh
+    - export RELAY_CI_PATH_DEPS=1
+    - cd relay-gateway && ./scripts/ci-ensure-deps.sh && cd ..
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^v/
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - relay-gateway/scripts/stage-docker-context.sh "$CI_PROJECT_DIR/docker-ctx"
+  artifacts:
+    name: "relay-docker-ctx-$CI_COMMIT_SHORT_SHA"
+    paths:
+      - docker-ctx/
+    expire_in: 1 hour
+
+.docker_publish:
+  stage: docker
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  needs: ["docker:prepare-context"]
+  before_script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"${CI_REGISTRY}\":{\"auth\":\"$(printf "%s:%s" "${CI_REGISTRY_USER}" "${CI_REGISTRY_PASSWORD}" | base64 | tr -d '\n')\"}}}" > /kaniko/.docker/config.json
+  script:
+    - |
+      TAGS="--destination ${DOCKER_IMAGE}:${CI_COMMIT_SHORT_SHA}"
+      if [ "$CI_COMMIT_BRANCH" = "$CI_DEFAULT_BRANCH" ]; then
+        TAGS="$TAGS --destination ${DOCKER_IMAGE}:main --destination ${DOCKER_IMAGE}:latest"
+      fi
+      if [ -n "$CI_COMMIT_TAG" ]; then
+        TAGS="$TAGS --destination ${DOCKER_IMAGE}:${CI_COMMIT_TAG}"
+      fi
+      /kaniko/executor \
+        --context "${CI_PROJECT_DIR}/docker-ctx" \
+        --dockerfile "${CI_PROJECT_DIR}/${DOCKERFILE}" \
+        --cache=true \
+        --cache-repo "${CI_REGISTRY_IMAGE}/cache" \
+        $TAGS
+
+docker:publish:
+  extends: .docker_publish
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^v/
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+publish:crate:
+  stage: package
+  image: rust:${RUST_VERSION}-bookworm
+  needs: ["test:verify"]
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^v[0-9]/
+      when: manual
+  before_script:
+    - export PATH="/usr/local/cargo/bin:$PATH"
+    - relay-gateway/scripts/ci-clone-path-deps.sh
+  script:
+    - cd relay-gateway && cargo publish --locked --dry-run
+  allow_failure: true

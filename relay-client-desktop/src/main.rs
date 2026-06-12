@@ -1,6 +1,7 @@
 mod embedded_server;
 mod git_mirror;
 mod http_host;
+mod ipfs_kubo;
 mod verify;
 
 use anyhow::{Context, Result};
@@ -45,6 +46,10 @@ struct Args {
     /// Client GET hook path
     #[arg(long, default_value = "hooks/client/get.jsx")]
     hook_path: String,
+
+    /// Start Kubo (ipfs daemon) if needed and point gateway at local IPFS HTTP API
+    #[arg(long)]
+    ipfs: bool,
 }
 
 fn main() -> Result<()> {
@@ -82,12 +87,21 @@ fn main() -> Result<()> {
         if let Some(checkout) = &args.repo {
             git_mirror::ensure_is_git_repo(checkout)?;
             git_mirror::warn_if_dirty(checkout)?;
+            let _ipfs = ipfs_kubo::IpfsSidecar::ensure(args.ipfs)?;
+            let ipfs_env: Vec<(String, String)> = if args.ipfs || std::env::var("RELAY_DESKTOP_IPFS").ok().as_deref() == Some("1") {
+                ipfs_kubo::IpfsSidecar::gateway_env()
+            } else {
+                Vec::new()
+            };
+            let ipfs_env_refs: Vec<(&str, &str)> =
+                ipfs_env.iter().map(|(k, v)| (k.as_str(), v.as_str())).collect();
             let mirror = GitMirror::ensure(checkout)?;
             let gateway_repo_path = mirror.repo_path_for_gateway();
             let server = EmbeddedRelayServer::start(
                 &gateway_repo_path,
                 &mirror.repo_name,
                 &mirror.branch,
+                &ipfs_env_refs,
             )?;
             let base = server.base_url.clone();
             let rn = server.repo_name.clone();

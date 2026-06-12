@@ -3,3 +3,4 @@
 .idea/
 *.log
 relay-client-desktop/logs/
+relay-client-desktop/fixtures/catalog/.git/

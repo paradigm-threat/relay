@@ -73,7 +73,9 @@ impl RelayHttpHost {
         if !file_canon.starts_with(&root_canon) {
             return None;
         }
-        std::fs::read_to_string(&path).ok()
+        let bytes = std::fs::read(&path).ok()?;
+        // Text and subtitle/reel paths; binary media falls through to gateway IPFS GET.
+        String::from_utf8(bytes).ok()
     }
 }
 

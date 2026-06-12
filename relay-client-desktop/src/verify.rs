@@ -39,9 +39,15 @@ pub fn verify_local_repo(opts: &VerifyOptions) -> Result<()> {
         &gateway_repo_path,
         &mirror.repo_name,
         &mirror.branch,
+        &[],
     )?;
 
-    let host = RelayHttpHost::new(&server.base_url, &mirror.repo_name, &mirror.branch);
+    let host = RelayHttpHost::with_checkout(
+        &server.base_url,
+        &mirror.repo_name,
+        &mirror.branch,
+        Some(opts.checkout.clone()),
+    );
     let hook_path = opts
         .hook_path
         .clone()

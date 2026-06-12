@@ -12,6 +12,7 @@ fn fixture_readme_available_via_gateway() {
         &mirror.repo_path_for_gateway(),
         &mirror.repo_name,
         &mirror.branch,
+        &[],
     )
     .expect("embedded server");
 
