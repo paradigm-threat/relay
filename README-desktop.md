@@ -13,6 +13,8 @@ relay-client-desktop --repo ~/dev/fan-edits
 relay-client-desktop --repo ~/dev/fan-edits --ipfs   # Kubo sidecar + local gateway
 ```
 
-fan-edits helper: `~/dev/fan-edits/scripts/open-relay-desktop.sh` (pass `--ipfs` through).
+fan-edits helper: `~/dev/fan-edits/scripts/open-relay-desktop.sh` (pass `--ipfs` or `--verify` through).
+
+Headless verify uses `render-manifest.json` in the checkout when present.
 
 Depends on sibling **`relay-runtime`** and **`relay-gateway`** (subprocess) checkouts.

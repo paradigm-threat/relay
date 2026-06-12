@@ -87,7 +87,10 @@ fn main() -> Result<()> {
         if let Some(checkout) = &args.repo {
             git_mirror::ensure_is_git_repo(checkout)?;
             git_mirror::warn_if_dirty(checkout)?;
-            let _ipfs = ipfs_kubo::IpfsSidecar::ensure(args.ipfs)?;
+            let ipfs_sidecar = ipfs_kubo::IpfsSidecar::ensure(args.ipfs)?;
+            if let Some(sidecar) = ipfs_sidecar {
+                Box::leak(Box::new(sidecar));
+            }
             let ipfs_env: Vec<(String, String)> = if args.ipfs || std::env::var("RELAY_DESKTOP_IPFS").ok().as_deref() == Some("1") {
                 ipfs_kubo::IpfsSidecar::gateway_env()
             } else {

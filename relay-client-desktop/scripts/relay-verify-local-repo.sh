@@ -8,6 +8,9 @@ GATEWAY="${RELAY_GATEWAY_BIN:-$RELAY_ROOT/relay-gateway/target/debug/relay-gatew
 
 CHECKOUT="${1:-$ROOT/fixtures/catalog}"
 MANIFEST="${2:-}"
+if [[ -z "$MANIFEST" && -f "$CHECKOUT/render-manifest.json" ]]; then
+  MANIFEST="$CHECKOUT/render-manifest.json"
+fi
 
 if [[ ! -x "$GATEWAY" && ! -f "$GATEWAY" ]]; then
   echo "Build relay-gateway first: cd relay-gateway && cargo build --bin relay-gateway" >&2

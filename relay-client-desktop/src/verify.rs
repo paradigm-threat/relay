@@ -75,7 +75,7 @@ pub fn verify_local_repo(opts: &VerifyOptions) -> Result<()> {
     if let Some(manifest_path) = &opts.manifest_path {
         run_manifest(&rendered.text, manifest_path)?;
     } else {
-        assert_text_contains(&rendered.text, &["Relay", "catalog"])
+        assert_text_contains(&rendered.text, &["Fan Edits", "FanMixes"])
             .map_err(|e| anyhow::anyhow!(e))?;
     }
 
