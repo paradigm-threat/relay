@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "slug": "sample-fanmix",
+      "category": "FanMixes",
+      "path": "FanMixes/Sample",
+      "title": "Sample FanMix Project",
+      "reel": "FanMixes/Sample/Project.reel"
+    }
+  ]
+}

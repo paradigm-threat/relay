@@ -1,0 +1,13 @@
+{
+  "entry": "hooks/client/get.jsx",
+  "cases": [
+    {
+      "name": "catalog-root",
+      "assertText": ["Fan Edits", "FanMixes", "KidFriendly"]
+    },
+    {
+      "name": "index-json-loaded",
+      "assertText": ["Sample FanMix Project"]
+    }
+  ]
+}

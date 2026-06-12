@@ -1,0 +1,39 @@
+[package]
+name = "relay-client-desktop"
+version = "0.1.0"
+edition = "2021"
+description = "Relay desktop client with embedded loopback gateway"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "relay_client_desktop"
+path = "src/lib.rs"
+
+[[bin]]
+name = "relay-client-desktop"
+path = "src/main.rs"
+
+[[test]]
+name = "verify_catalog"
+path = "tests/verify_catalog.rs"
+
+[[test]]
+name = "readme_http"
+path = "tests/readme_http.rs"
+
+[dependencies]
+relay-runtime = { path = "../../relay-runtime" }
+relay-runtime-desktop = { path = "../relay-runtime-desktop" }
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+git2 = "0.18"
+reqwest = { version = "0.12", features = ["blocking"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+url = "2"
+
+[dev-dependencies]
+tempfile = "3"

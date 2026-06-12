@@ -1,0 +1,28 @@
+themes:
+  light:
+    selectors:
+      ".catalog-root":
+        padding: "24px"
+        display: "flex"
+        flexDirection: "column"
+        gap: "12px"
+        backgroundColor: "#f5f4f0"
+      "h1":
+        fontSize: "24px"
+      "h2":
+        fontSize: "20px"
+      "p":
+        fontSize: "15px"
+      ".nav-btn":
+        padding: "8px 16px"
+        backgroundColor: "#2563eb"
+        color: "#ffffff"
+      ".project-btn":
+        padding: "10px 14px"
+        backgroundColor: "#ffffff"
+        color: "#111827"
+      ".readme-panel":
+        padding: "16px"
+        backgroundColor: "#ffffff"
+        borderRadius: "8px"
+current_theme: light

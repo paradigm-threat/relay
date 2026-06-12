@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = [
+    "relay-runtime-desktop",
+    "relay-client-desktop",
+]
+exclude = [
+    "relay-gateway",
+    "relay-old",
+    "relay2",
+]
+
+[workspace.package]
+edition = "2021"
+license = "MIT OR Apache-2.0"
