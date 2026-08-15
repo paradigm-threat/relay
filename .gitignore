@@ -4,3 +4,19 @@
 *.log
 relay-client-desktop/logs/
 relay-client-desktop/fixtures/catalog/.git/
+
+# Sibling Relay checkouts (separate git repos). Do not add them to this desktop workspace.
+/relay-old/
+/relay2/
+/relay-gateway/
+/relay-runtime/
+/relay-client-web/
+/relay-client-android/
+/relay-template/
+/relay-video/
+/relay-web-assets/
+/relay-master/
+/snesology-library-catalog-stub/
+/relay/relay-client-web/
+/relay/template/
+

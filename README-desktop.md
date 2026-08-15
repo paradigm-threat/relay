@@ -1,8 +1,14 @@
 # Relay desktop workspace
 
-Native Relay client crates (Ubuntu + Windows):
+Native desktop crates live here (**not** the Android tester, **not** the gateway).
 
-- **`relay-runtime-desktop`** — winit + tiny-skia hook renderer
+- **Android ↔ web testing:** sibling [`relay-runtime/docs/ANDROID_WEB_TEST.md`](relay-runtime/docs/ANDROID_WEB_TEST.md)
+- **Gateway:** sibling `relay-gateway/` → GitLab **`clevertree/relay-gateway`**
+- **Product path for desktop users:** web client. Native Windows/macOS UI is skipped.
+
+## Crates in this git repo
+
+- **`relay-runtime-desktop`** — winit + tiny-skia (experimental; not the tester path)
 - **`relay-client-desktop`** — embedded loopback gateway, git mirror, `--verify`
 
 ```bash
