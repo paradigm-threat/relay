@@ -56,6 +56,16 @@ Canonical product doc: [`../../myproblem/docs/projects.md`](../../myproblem/docs
 | **Project (primary)** | Batch investigate until DIY, need-more-evidence, merchant-ready, or closed |
 | Merchant | Optional handoff; updates stay on the Problem |
 
+## Shared local knowledge base
+
+Canonical: [`../../myproblem/docs/knowledge-base.md`](../../myproblem/docs/knowledge-base.md).
+
+Investigations **mint and maintain public docs** for **Georgia and Israel only** — every article must tie to a **local geographic point** in-region. Private ticket data stays private; public advice (and attributed rumors from reliable / identified sources) feeds the shared layer.
+
+**Compete locally, not globally:** outrun ChatGPT/Grok/Google/Yelp on *place-connected, realtime* knowledge — Relay vision — instead of world-scale corpus size.
+
+**Channels (opt-in):** people may project coarse geo or **Wi-Fi locality** (never passwords) so tickets and helpers meet on house / street / town / network channels. More non-sensitive locality → more trust; street address and phone stay optional.
+
 ## Core loop
 
 1. Person opens MyProblem (big actions, voice-first, ADA-capable) and lands on **Problems**.
@@ -67,6 +77,7 @@ Canonical product doc: [`../../myproblem/docs/projects.md`](../../myproblem/docs
 7. When not: local business gets the **Problem tip** and can bid / accept / decline.
 8. After handshake, the deal is between them.
 9. Hard cases escalate inside the Project worker (frontier / other LLMs / web); answer written onto the Problem.
+10. Public lessons → region KB update; optional channel post (place / Wi-Fi locality) without exposing secrets.
 
 ## Domains (start narrow, design for more)
 

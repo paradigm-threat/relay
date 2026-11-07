@@ -9,7 +9,7 @@ Relay-native, no-salary company: free problem-solving AI → local businesses jo
 | # | File | Contents |
 |---|---|---|
 | 01 | [01-competition.md](01-competition.md) | Exact vs close competitors; free AI / image scan reality |
-| 02 | [02-vision-product.md](02-vision-product.md) | Product loop; **Problems not chats**; free policy; economics |
+| 02 | [02-vision-product.md](02-vision-product.md) | Product loop; **Problems not chats**; Projects; **local KB**; free policy; economics |
 | 03 | [03-investors-and-test-pools.md](03-investors-and-test-pools.md) | How to raise; GA + Israel pilots |
 | 04 | [04-georgia-llc.md](04-georgia-llc.md) | Forming the new GA LLC (not reviving AZ) |
 | 05 | [05-spend-and-use-of-funds.md](05-spend-and-use-of-funds.md) | Infra, ads, stores; $0 salaries |

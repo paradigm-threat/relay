@@ -51,8 +51,9 @@ See [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype
 7. Legal-stop fields on the Problem every update  
 8. Provider “open Problem” link + bid/decline (always optional beside Project)  
 9. Notify: in-app timeline first; email / push for Project + merchant updates  
-10. Phone verify; soft daily budgets  
-11. Accessibility pass (screen reader, contrast, large targets)  
+10. **Local KB:** redacted publish from Projects; GA/Israel partition; place + Wi-Fi channels (no passwords)  
+11. Phone verify; soft daily budgets  
+12. Accessibility pass (screen reader, contrast, large targets)  
 
 **Verticals locked for pilot:** e.g. plumbing leak / fixture + glasses frame only.
 
@@ -105,3 +106,4 @@ Raise materials: one pager + this folder + live metrics from Phases 3–4. Instr
 | 2026-11-07 | Context = Problem (Jira-like), not chat window | Combine/split; brief compiler; Relay tip per Problem |
 | 2026-11-07 | Phase 0.5 Rackspace Spot benches | SJC A30 GPU Spot + IAD/LON CPU; realtime feed→context |
 | 2026-11-07 | **Projects** = deferred batch investigation (primary) | Realtime = ticket capture only; see myproblem `docs/projects.md` |
+| 2026-11-07 | **Shared local KB** + place / Wi-Fi channels | GA/Israel only; redacted public docs; see myproblem `docs/knowledge-base.md` |
