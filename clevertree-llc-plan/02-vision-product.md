@@ -64,7 +64,7 @@ Investigations **mint and maintain public docs** for **Georgia and Israel only**
 
 **Compete locally, not globally:** outrun ChatGPT/Grok/Google/Yelp on *place-connected, realtime* knowledge — Relay vision — instead of world-scale corpus size.
 
-**Channels (opt-in):** people may project coarse geo or **Wi-Fi locality** (never passwords) so tickets and helpers meet on house / street / town / network channels. More non-sensitive locality → more trust; street address and phone stay optional.
+**Channels (opt-in):** anything with a **unique `channel_id`** — house alias, street/town, Wi-Fi locality, **Bluetooth dongle/beacon**, etc. Tickets associated with a channel **appear to anyone subscribed** to that id (no passwords/pairing secrets). More non-sensitive locality → more trust; street address and phone stay optional.
 
 ## Core loop
 
