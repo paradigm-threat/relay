@@ -48,12 +48,13 @@ Lifecycle (ticket-like): `open` → `packaged` → `project_queued` / `project_r
 
 Canonical product doc: [`../../myproblem/docs/projects.md`](../../myproblem/docs/projects.md).
 
-**Realtime AI only captures the ticket** (camera coaching + clarifying questions). Deep research is a **Project**: queued, batched server work when Spot/API capacity is free — cheaper than fake realtime at best quality. Merchant submit stays available anytime. Bot, humans, and providers write the **same ticket timeline** (app ± email).
+**No on-demand frontier LLM.** Smart-enough realtime AI **captures** questions / requirements / photos, then **queues a JIRA-like ticket by status**. Deep research is a **Project**: batch workers drain ASAP and investigate completely (cache/KB first so work is not redundant). **Bedrock / other frontier** = rare backbone escalate inside that batch path ([`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md)). Merchant submit stays available anytime. Bot, humans, and providers write the **same ticket timeline** (app ± email).
 
 | Mode | Job |
 |---|---|
-| Realtime | Ticket intake — SEND frames + coach; do not promise a full solve |
-| **Project (primary)** | Batch investigate until DIY, need-more-evidence, merchant-ready, or closed |
+| Realtime | Smart-enough intake — SEND frames + coach; not a live Sonnet solve |
+| **Project (primary)** | Batch investigate ASAP + completely until DIY, need-evidence, merchant-ready, or closed |
+| Backbone escalate | Rare Bedrock/API call on unique misses; cache gold |
 | Merchant | Optional handoff; updates stay on the Problem |
 
 ## Shared local knowledge base

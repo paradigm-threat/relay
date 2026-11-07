@@ -2,12 +2,15 @@
 
 **Goal:** Accept camera / near-video bandwidth, turn it into usable frames + OCR + context in near-realtime, with accuracy approaching today’s OpenAI / Anthropic vision — and where we cannot match them live, call them and **learn**.
 
-**Honesty first:** Running frontier-class multimodal reasoning on **every** frame of a live stream is not economically “unlimited free.” The workable stack is:
+**Honesty first:** Running frontier-class multimodal reasoning on **every** frame (or as an on-demand product LLM) is not economically “unlimited free.” MyProblem stance:
 
 1. **Aggressive frame selection** (most bandwidth never becomes a model call)  
-2. **Regional cheap vision + OCR** for the realtime loop  
-3. **Frontier escalate** (OpenAI / Anthropic / Bedrock Sonnet-class) on hard frames  
-4. **Distill / fine-tune** from escalate labels back into the cheap path  
+2. **Smart-enough realtime** — capture questions / requirements / photos only  
+3. **Queue JIRA-like ticket by status** → **batch investigate** ASAP + completely (cache/KB first)  
+4. **Frontier escalate** (Bedrock / Anthropic / OpenAI) **rare**, inside the **Project batch** worker — not live  
+5. **Distill / fine-tune** from escalate labels back into the cheap path  
+
+Canonical product docs: [`../../myproblem/docs/projects.md`](../../myproblem/docs/projects.md) · [`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md).
 
 ---
 
@@ -20,21 +23,20 @@ Phone camera (live preview stays on device)
   ▼
 Regional ingest (US + IL/EU)
   │  auth + **server rate limit** (reject/slow extras)
-  │  attach to Problem ID
+  │  attach to Problem ID — capture coach patches ticket fields
   ▼
-Frame factory (GPU small)
-  │  optional re-score, crop ROI
-  │  OCR (local: PaddleOCR / RapidOCR; Textract only if needed)
-  │  fast VL / detector (Florence-2-class, YOLO-World, Nova Lite / Haiku-class API)
+Ticket packaged → Project status queue (JIRA-like)
   ▼
-Structured Problem patch  ←── this is what the user sees in realtime
+Batch investigator (asap + complete, non-redundant)
+  │  cache / local KB → cheap VL/OCR (Spot / Haiku-class)
+  │  structured Problem patch + InvestigationUpdate
   │
   ├─ confidence high → done (stay cheap)
-  └─ confidence low / legal-sensitive / tiny text
+  └─ still stuck (math / lang / hard VL / legal gold)
         ▼
-     Frontier vision (Claude Sonnet / GPT-4o-class / Bedrock)
+     Backbone escalate (Bedrock Sonnet-class) — rare
         ▼
-     Write gold answer onto Problem + training queue
+     Write gold onto Problem + answer cache + training queue
         ▼
      Periodic distill / prompt/router update for regional model
 ```
@@ -57,7 +59,7 @@ Default policy to bench (tune in Spot Phase 0.5): **2–4 accepts/sec** burst, *
 | Preview / “point here” | &lt; 200–500 ms | Keep/reject feedback; ROI hints |
 | OCR + labels | &lt; 1–2 s | Model numbers, serials, signs |
 | Advice patch | &lt; 2–5 s | Cheap VL structured fields |
-| Frontier escalate | &lt; 5–15 s | Hard cases only |
+| Frontier escalate (in Project batch) | minutes→hours OK | Hard unique misses only; not live UX |
 
 Do **not** ship continuous 1080p30 to the cloud. Ship **selected frames** plus metadata.
 

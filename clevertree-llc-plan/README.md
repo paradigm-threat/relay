@@ -15,7 +15,7 @@ Relay-native, no-salary company: free problem-solving AI → local businesses jo
 | 05 | [05-spend-and-use-of-funds.md](05-spend-and-use-of-funds.md) | Infra, ads, stores; $0 salaries |
 | 06 | [06-infrastructure.md](06-infrastructure.md) | Problem store, brief compiler, Relay-first, backbones |
 | 07 | [07-step-by-step.md](07-step-by-step.md) | Phased checklist from paper → pilot → raise |
-| 08 | [08-realtime-vision-infra-cost.md](08-realtime-vision-infra-cost.md) | Rapid vision pipeline; 2-region $$$ |
+| 08 | [08-realtime-vision-infra-cost.md](08-realtime-vision-infra-cost.md) | Capture→queue→batch; rare Bedrock; 2-region $$$ |
 | 09 | [09-rackspace-spot-vision-prototype.md](09-rackspace-spot-vision-prototype.md) | Spot A30/CPU benches; realtime feed→Problem |
 
 ## Copies

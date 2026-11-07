@@ -45,15 +45,16 @@ See [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype
 1. PWA: **Problem list/detail** — live camera / What is this / Find help / Voice (inputs attach to a Problem)  
 2. **On-device frame gate** (clarity + uniqueness) + **server rate limit** on accepts; route **free → Spot pool** / **paid → reliable pool** with busy copy for free when Spot is down  
 3. Problem schema + statuses; **Project** job queue + InvestigationUpdate timeline; brief compiler (not raw chat history)  
-4. Realtime agent = **capture coach** only; **Project batch worker** does deep VL / multi-LLM / web research when capacity frees  
-5. Image preprocess + agent returns **Problem patches** + combine/split suggestions (coach live; deep patch in Project)  
-6. Each Problem as Relay tip (or Relay-linked store)  
-7. Legal-stop fields on the Problem every update  
-8. Provider “open Problem” link + bid/decline (always optional beside Project)  
-9. Notify: in-app timeline first; email / push for Project + merchant updates  
-10. **Local KB:** redacted publish from Projects; GA/Israel partition; place + Wi-Fi channels (no passwords)  
-11. Phone verify; soft daily budgets  
-12. Accessibility pass (screen reader, contrast, large targets)  
+4. Realtime agent = **smart-enough capture** only; **Project batch worker** drains status queue ASAP (complete, non-redundant; cache/KB first)  
+5. **Bedrock/frontier** only as rare escalate inside Project; cache answers ([`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md))  
+6. Image preprocess + agent returns **Problem patches** + combine/split (coach live; deep patch in Project)  
+7. Each Problem as Relay tip (or Relay-linked store)  
+8. Legal-stop fields on the Problem every update  
+9. Provider “open Problem” link + bid/decline (always optional beside Project)  
+10. Notify: in-app timeline first; email / push for Project + merchant updates  
+11. **Local KB:** redacted publish from Projects; GA/Israel partition; channels by unique id  
+12. Phone verify; soft daily budgets  
+13. Accessibility pass (screen reader, contrast, large targets)  
 
 **Verticals locked for pilot:** e.g. plumbing leak / fixture + glasses frame only.
 
@@ -107,3 +108,4 @@ Raise materials: one pager + this folder + live metrics from Phases 3–4. Instr
 | 2026-11-07 | Phase 0.5 Rackspace Spot benches | SJC A30 GPU Spot + IAD/LON CPU; realtime feed→context |
 | 2026-11-07 | **Projects** = deferred batch investigation (primary) | Realtime = ticket capture only; see myproblem `docs/projects.md` |
 | 2026-11-07 | **Shared local KB** + place / Wi-Fi channels | GA/Israel only; redacted public docs; see myproblem `docs/knowledge-base.md` |
+| 2026-11-07 | No on-demand frontier; Bedrock = rare batch escalate | Capture → queue → batch ASAP; see `docs/backbone-escalate.md` |
