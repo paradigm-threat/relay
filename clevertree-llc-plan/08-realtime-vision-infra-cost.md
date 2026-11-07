@@ -28,18 +28,22 @@ Regional ingest (US + IL/EU)
 Ticket packaged → Project status queue (JIRA-like)
   ▼
 Batch investigator (asap + complete, non-redundant)
-  │  cache / local KB → cheap VL/OCR (Spot / Haiku-class)
-  │  structured Problem patch + InvestigationUpdate
+  │  cache / local KB
+  │  HF / open VL+OCR on Spot (+ optional image/diagram gen)
+  │  mid LLM / tools
+  │  structured Problem patch + InvestigationUpdate + media Evidence
   │
   ├─ confidence high → done (stay cheap)
-  └─ still stuck (math / lang / hard VL / legal gold)
+  └─ still stuck (math / lang / hard VL / gen / legal gold)
         ▼
      Backbone escalate (Bedrock Sonnet-class) — rare
         ▼
-     Write gold onto Problem + answer cache + training queue
+     Write gold onto Problem + answer/media cache + training queue
         ▼
      Periodic distill / prompt/router update for regional model
 ```
+
+**Photo analysis & generation:** prefer **Hugging Face weights on Spot** (or HF/cheap batch Inference) inside Projects — not on-demand Midjourney/Claude-vision UX. Same economics as text escalate: unique miss → cache.
 
 ### Feature: on-device frame gate + server rate limit
 
