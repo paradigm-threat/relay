@@ -48,7 +48,7 @@ See [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype
 2. **On-device frame gate** (clarity + uniqueness) + **server rate limit** on accepts; route **free → Spot pool** / **paid → reliable pool** with busy copy for free when Spot is down  
 3. Problem schema on **Relay tip** (`ticket_uuid`); thin queue index; **anon default** + free recover email ([`../../myproblem/docs/anonymous-tickets.md`](../../myproblem/docs/anonymous-tickets.md)); Project jobs + InvestigationUpdate; brief compiler  
 4. Realtime agent = **smart-enough capture** (stills only, no video); audio → object store (Bunny prefer); first ASR + LLM retranscription gate  
-5. **Project batch worker** drains status queue ASAP; **Bedrock/frontier** rare escalate ([`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md))  
+5. **Project batch worker** drains status queue ASAP; **KB first**; **Bedrock/frontier** rare escalate after miss → KB write ([`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md) · [`../../myproblem/docs/knowledge-base.md`](../../myproblem/docs/knowledge-base.md))  
 6. Image preprocess + agent returns **Problem patches** + combine/split (coach live; deep patch in Project)  
 7. Each Problem as Relay tip (or Relay-linked store)  
 8. Legal-stop fields on the Problem every update  
@@ -113,5 +113,7 @@ Raise materials: one pager + this folder + live metrics from Phases 3–4. Instr
 | 2026-11-07 | **Projects** = deferred batch investigation (primary) | Realtime = ticket capture only; see myproblem `docs/projects.md` |
 | 2026-11-07 | **Shared local KB** + place / Wi-Fi channels | GA/Israel only; redacted public docs; see myproblem `docs/knowledge-base.md` |
 | 2026-11-07 | No on-demand frontier; Bedrock = rare batch escalate | Capture → queue → batch ASAP; see `docs/backbone-escalate.md` |
+| 2026-11-08 | KB = primary learning (git Markdown, PT categories) | Check KB before escalate; research/Bedrock write KB; browser honesty; LLM tweaks = vision/function only |
+| 2026-11-08 | KB = problem-solving only; no boost; no web cache | Speculative user+AI; local resources + DIY; re-test/refine/don’t forget; site+terms copy |
 | 2026-11-07 | Anon tickets + Relay tip SoT + Bunny/S3 audio | Free recover email; no server video; see `docs/anonymous-tickets.md` |
 | 2026-11-07 | Israel competition refresh in `01` | Hendiman / DontSearch / AI Trust; LLM stack same as US |

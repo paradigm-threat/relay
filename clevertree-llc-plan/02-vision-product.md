@@ -62,22 +62,25 @@ Lifecycle (ticket-like): `open` → `packaged` → `project_queued` / `project_r
 
 Canonical product doc: [`../../myproblem/docs/projects.md`](../../myproblem/docs/projects.md).
 
-**No on-demand frontier LLM or premium vision.** Smart-enough realtime AI **captures** questions / requirements / **stills** (no server video) + **audio**, then **queues a JIRA-like ticket by status**. Tickets are **anonymous by default** (server `ticket_uuid`; APK local backup; warn: lose phone → lose tickets). **Free** secret recover email or register for durable access ([`../../myproblem/docs/anonymous-tickets.md`](../../myproblem/docs/anonymous-tickets.md)). Dossier = **Relay tip**; audio/stills in cheap object store (Bunny prefer). Deep research is a **Project**: batch ASAP — HF/Spot VL + optional gen; **Bedrock** = rare escalate ([`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md)). Merchant submit anytime. Same ticket timeline for bot / humans / providers.
+**No on-demand frontier LLM or premium vision.** Smart-enough realtime AI **captures** questions / requirements / **stills** (no server video) + **audio**, then **queues a JIRA-like ticket by status**. Tickets are **anonymous by default** (server `ticket_uuid`; APK local backup; warn: lose phone → lose tickets). **Free** secret recover email or register for durable access ([`../../myproblem/docs/anonymous-tickets.md`](../../myproblem/docs/anonymous-tickets.md)). Dossier = **Relay tip**; audio/stills in cheap object store (Bunny prefer). Deep research is a **Project**: batch ASAP — **KB git first**, HF/Spot VL + optional gen + allowed browser research; **Bedrock** = rare escalate after miss, then KB distill ([`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md) · [`../../myproblem/docs/knowledge-base.md`](../../myproblem/docs/knowledge-base.md)). Merchant submit anytime. Same ticket timeline for bot / humans / providers.
 
 | Mode | Job |
 |---|---|
 | Realtime | Smart-enough intake — stills + coach; audio Evidence; not live Sonnet / video upload |
 | **Project (primary)** | Batch investigate ASAP + completely; HF/Spot VL + optional diagram gen |
-| Backbone escalate | Rare Bedrock/API on unique misses; cache gold |
+| Knowledge base | Git Markdown (PT categories) — primary learning; check before escalate |
+| Backbone escalate | Rare Bedrock/API on KB misses; cache + KB distill |
 | Merchant | Optional handoff; updates stay on the Problem |
 
-## Shared local knowledge base
+## Shared local knowledge base (primary learning)
 
 Canonical: [`../../myproblem/docs/knowledge-base.md`](../../myproblem/docs/knowledge-base.md).
 
-Investigations **mint and maintain public docs** for **Georgia and Israel only** — every article must tie to a **local geographic point** in-region. Private ticket data stays private; public advice (and attributed rumors from reliable / identified sources) feeds the shared layer.
+The KB is a **git repo of Markdown** (Paradigm Threat patterns: **category folders**, hub `page.md`, reader articles, `investigations/` dossiers, discovery links). It exists so the app can **solve problems** — especially with **local resources** that ad-driven search rankings bury — plus DIY advice when place does not matter. **Disclaimer:** speculative; **user contributions + AI investigations only**; **no boosting / paid ranking**. Do **not** freeze-frame the greater internet; cite live URLs. Private ticket data stays private.
 
-**Compete locally, not globally:** outrun ChatGPT/Grok/Google/Yelp on *place-connected, realtime* knowledge — Relay vision — instead of world-scale corpus size.
+**Learning loop (locked):** Project workers **check the KB before** Bedrock / expensive research; **write useful non-searchable residue after**; **re-test / refine / ditch** advice that stops helping; **do not forget** (git history). Browser automation runs **where bots are allowed**, with **honest** feedback. The server LLM is tweaked only for **vision/function**.
+
+**Compete on problem-solving, not directory scrapes:** outrun ChatGPT/Grok/Google/Yelp on *local resource wisdom* — Relay vision — instead of caching the open web or fine-tuning trivia into weights.
 
 **Channels (opt-in):** anything with a **unique `channel_id`** — house alias, street/town, Wi-Fi locality, **Bluetooth dongle/beacon**, etc. Tickets associated with a channel **appear to anyone subscribed** to that id (no passwords/pairing secrets). More non-sensitive locality → more trust; street address and phone stay optional.
 
@@ -91,8 +94,8 @@ Investigations **mint and maintain public docs** for **Georgia and Israel only**
 6. Often: Project → `ai_resolved` — person never needed to ring the shop (and we never answered a phone for them).
 7. When not: local business gets the **Problem tip** and can bid / accept / decline — **or ignore it entirely** (no obligation).
 8. After handshake, the deal is between them. Ignoring never creates a bill or a duty.
-9. Hard cases escalate inside the Project worker (frontier / other LLMs / web); answer written onto the Problem.
-10. Public lessons → region KB update; optional channel post (place / Wi-Fi locality) without exposing secrets.
+9. Hard cases: KB miss → allowed research / tools → rare frontier escalate inside the Project worker; answer written onto the Problem **and** into the region KB.
+10. Public lessons → region KB git (categorized Markdown); optional channel post (place / Wi-Fi locality) without exposing secrets.
 
 ## Domains (start narrow, design for more)
 

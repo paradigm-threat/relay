@@ -6,11 +6,11 @@
 
 1. **Aggressive frame selection** (most bandwidth never becomes a model call)  
 2. **Smart-enough realtime** — capture questions / requirements / photos only  
-3. **Queue JIRA-like ticket by status** → **batch investigate** ASAP + completely (cache/KB first)  
-4. **Frontier escalate** (Bedrock / Anthropic / OpenAI) **rare**, inside the **Project batch** worker — not live  
-5. **Distill / fine-tune** from escalate labels back into the cheap path  
+3. **Queue JIRA-like ticket by status** → **batch investigate** ASAP + completely (**region KB git + cache first**)  
+4. **Frontier escalate** (Bedrock / Anthropic / OpenAI) **rare**, after KB miss, inside the **Project batch** worker — not live  
+5. **Write useful research + escalate residue into the KB** (git Markdown); optional distill for **function/vision** — knowledge compounds in KB, not by stuffing the server model ([`../../myproblem/docs/knowledge-base.md`](../../myproblem/docs/knowledge-base.md))
 
-Canonical product docs: [`../../myproblem/docs/projects.md`](../../myproblem/docs/projects.md) · [`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md).
+Canonical product docs: [`../../myproblem/docs/projects.md`](../../myproblem/docs/projects.md) · [`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md) · [`../../myproblem/docs/knowledge-base.md`](../../myproblem/docs/knowledge-base.md).
 
 ---
 
@@ -28,9 +28,10 @@ Regional ingest (US + IL/EU)
 Ticket packaged → Project status queue (JIRA-like)
   ▼
 Batch investigator (asap + complete, non-redundant)
-  │  cache / local KB
+  │  region KB git + cache (miss → continue)
+  │  allowed browser / maps research (honest walls)
   │  HF / open VL+OCR on Spot (+ optional image/diagram gen)
-  │  mid LLM / tools
+  │  mid LLM / tools → commit public lessons to KB
   │  structured Problem patch + InvestigationUpdate + media Evidence
   │
   ├─ confidence high → done (stay cheap)
@@ -38,9 +39,9 @@ Batch investigator (asap + complete, non-redundant)
         ▼
      Backbone escalate (Bedrock Sonnet-class) — rare
         ▼
-     Write gold onto Problem + answer/media cache + training queue
+     Write gold onto Problem + answer/media cache + **KB Markdown**
         ▼
-     Periodic distill / prompt/router update for regional model
+     Optional prompt/router tweak for vision/function only
 ```
 
 **Photo analysis & generation:** prefer **Hugging Face weights on Spot** (or HF/cheap batch Inference) inside Projects — not on-demand Midjourney/Claude-vision UX. Same economics as text escalate: unique miss → cache.

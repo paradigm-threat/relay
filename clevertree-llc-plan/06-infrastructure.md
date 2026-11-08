@@ -42,12 +42,14 @@ Token budget is an implementation detail of “how we compile the brief,” not 
 
 | Piece | Choice |
 |---|---|
-| Problem file | One Relay tip/repo per Problem (`ticket_uuid`); tip = dossier SoT providers open |
+| Problem file | Regional Relay git tip (`myproblem-tickets-georgia` / `-israel`) keyed by `ticket_uuid`; text dossier + media links — providers open exact UUID path |
 | Combine/split | Git-friendly: move evidence paths, write `related:` links, close superseded Problem |
-| Hosting UI | Park / SSR on relay-gateway or thin client-web app talking to gateway |
-| Auth | **Anon by default** (UUID + device claim / APK local backup); optional **free** secret recover email or free register; phone OTP when needed — see myproblem `docs/anonymous-tickets.md` |
-| Media | Audio + stills in **cheap object store** (Bunny prefer; S3-compatible OK); tip holds URI + hash only — **no video files**; do not pin multi-MB audio on every node |
-| Queue | Thin index (Neon/Redis) for Project / ASR job leases — not a second dossier |
+| Hosting UI | Park / SSR on **relay-gateway** (Intake); Vercel = marketing/APK only |
+| Auth | **UUID = capability** (no public list); APK local backup; optional **free** recover email/register — see myproblem `docs/anonymous-tickets.md` |
+| Media | Audio + stills in **cheap object store**; tip holds URI + hash only — **no binaries in git**; **no video files** |
+| Queue | Job lease **files** in the regional repo (`tickets/<uuid>/jobs/`) — **not** Neon/Redis |
+| PII | Auto-convert to city/safe radius; full PII on client, share on request — myproblem `docs/pii-and-privacy.md` |
+| Retention | Close deletes tip unless user `preserve`; mesh git history ~48h; offline master backup for integrity |
 | Chat/voice | Ephemeral input → Evidence/event; **not** a parallel source of truth; first ASR + LLM retranscription gate |
 | Billing | **Outside** Relay (Stripe etc.) — Relay has no card billing today; recover/register stay $0 |
 
