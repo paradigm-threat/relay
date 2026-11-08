@@ -39,7 +39,7 @@ See [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype
 2. ~~File Articles~~ — submitted eCorp 2026-11-08 (confirmed by SOS email); **still awaiting acceptance + certificate**  
 3. EIN; business bank account; optional DBA **MyProblem**  
 4. Draft operating agreement (no-salary + distribution + Relay license language)  
-5. Privacy policy + terms (Terms live; privacy still open; not a clinic; photo retention)  
+5. Privacy policy + terms (**Terms** + **Privacy** live on myproblem.app; not a clinic; photo retention)  
 6. Basic insurance quote  
 7. Stripe (or similar) account in LLC name — test mode  
 
@@ -118,5 +118,6 @@ Raise materials: one pager + this folder + live metrics from Phases 3–4. Instr
 | 2026-11-08 | KB = problem-solving only; no boost; no web cache | Speculative user+AI; local resources + DIY; re-test/refine/don’t forget; site+terms copy |
 | 2026-11-08 | Nearly-free website KB + coding assist planned | Vercel free + DNS; LLM build/deploy; Spot/MCP; MyProblem site-build coming soon |
 | 2026-11-08 | Batched agent work (vs realtime IDE) | Plan `10`: thorough Project coding/docs/render; Spot scratch; major coming-soon site copy |
+| 2026-11-08 | Public **/privacy** + Terms filing-status wording | PII client-held policy on site; Articles pending SOS accept |
 | 2026-11-07 | Anon tickets + Relay tip SoT + Bunny/S3 audio | Free recover email; no server video; see `docs/anonymous-tickets.md` |
 | 2026-11-07 | Israel competition refresh in `01` | Hendiman / DontSearch / AI Trust; LLM stack same as US |

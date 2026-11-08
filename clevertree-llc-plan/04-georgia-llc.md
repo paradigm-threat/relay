@@ -45,8 +45,6 @@
 
 Unless the deal says otherwise: membership interest in the **Georgia LLC** (product, brand, processor relationships, case-product IP you assign in). They do **not** automatically own the Relay gateway fleet or other Relay open-source/mesh projects.
 
-## Timeline (rough)
-
 ## Filing record (from Gmail / eCorp)
 
 | Field | Value |
@@ -58,9 +56,18 @@ Unless the deal says otherwise: membership interest in the **Georgia LLC** (prod
 | Primary email on filing | ari@asu.edu (secondary ari.asulin@gmail.com) |
 | NAICS | Information → Software Publishers (**513210**) |
 | SOS confirmation | Email from `ecorp.noreply@sos.ga.gov` to **ari.asulin@gmail.com** — *Business Formation* — filing successfully submitted; acceptance + certificate to follow (or reject + refile instructions) |
-| Receipt PDF | Attached on that mail as `2026110813934270-13905450.pdf` (open in Gmail for receipt / confirmation numbers) |
+| Receipt PDF | `2026110813934270-13905450.pdf` on that mail — likely confirmation / control ids **13934270** / **13905450** (open PDF in Gmail to confirm labels) |
 | Status (as of 2026-11-08 evening) | **Submitted / under review** — no separate “accepted + Certificate of Organization” email yet in Gmail |
 | Next | Watch Gmail + eCorp Dashboard for accept/reject; then EIN + bank |
+
+## After acceptance (do in order)
+
+1. **Download Certificate of Organization** from the SOS email / eCorp Dashboard; keep PDF with the receipt.  
+2. **EIN (IRS):** [IRS EIN online](https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online) — Domestic LLC, Georgia, responsible party = Ari; reason = banking / started new business. Print / save CP 575 (or confirmation screen).  
+3. **Business bank:** open LLC account with certificate + EIN + operating agreement draft / articles; fund lightly; no personal co-mingling.  
+4. **Optional DBA MyProblem** with county / SOS as Georgia requires for trade name.  
+5. **Stripe (test)** in LLC legal name once EIN + bank exist.  
+6. **Operating agreement** signed (even single-member) before investor money.
 
 ## Timeline (rough)
 
@@ -70,7 +77,7 @@ Unless the deal says otherwise: membership interest in the **Georgia LLC** (prod
 | 1 | ~~File Articles~~ — submitted eCorp **2026-11-08** (see Filing record above) |
 | 1–5 | **Await acceptance + certificate** — Gmail / Dashboard |
 | Same week after accept | EIN, bank, draft operating agreement; optional DBA MyProblem |
-| Before public pilot | Processor, privacy policy (Terms live on myproblem.app), insurance binder |
+| Before public pilot | Processor; privacy + terms live on myproblem.app; insurance binder |
 
 ## Israel note
 
