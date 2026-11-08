@@ -115,5 +115,6 @@ Raise materials: one pager + this folder + live metrics from Phases 3–4. Instr
 | 2026-11-07 | No on-demand frontier; Bedrock = rare batch escalate | Capture → queue → batch ASAP; see `docs/backbone-escalate.md` |
 | 2026-11-08 | KB = primary learning (git Markdown, PT categories) | Check KB before escalate; research/Bedrock write KB; browser honesty; LLM tweaks = vision/function only |
 | 2026-11-08 | KB = problem-solving only; no boost; no web cache | Speculative user+AI; local resources + DIY; re-test/refine/don’t forget; site+terms copy |
+| 2026-11-08 | Nearly-free website KB + coding assist planned | Vercel free + DNS; LLM build/deploy; Spot/MCP; MyProblem site-build coming soon |
 | 2026-11-07 | Anon tickets + Relay tip SoT + Bunny/S3 audio | Free recover email; no server video; see `docs/anonymous-tickets.md` |
 | 2026-11-07 | Israel competition refresh in `01` | Hendiman / DontSearch / AI Trust; LLM stack same as US |
