@@ -102,7 +102,7 @@ The KB is a **git repo of Markdown** (Paradigm Threat patterns: **category folde
 | Phase | Domains | Note |
 |---|---|---|
 | Pilot | Home repair (plumbing / appliance), simple glasses/frame; optionally one clinic/vet-style triage partner | Photo + “should I call?” load |
-| Parallel (KB now / product soon) | **Coding & websites** — nearly-free Vercel-class host + LLM build/deploy; Spot/MCP for burst compute | KB answers “how do I set up a site?” today; **in-product coding / build-the-site** assist = coming soon ([`../../myproblem/docs/coding-and-websites.md`](../../myproblem/docs/coding-and-websites.md)) |
+| Parallel (KB now / product soon) | **Batched agent work** — coding, networking, docs/office, heavy media pipelines; nearly-free websites | **Not** realtime Cursor/Codex: queue → thorough finish → notify. KB website path today; product soon ([`10-batched-agent-work.md`](10-batched-agent-work.md) · [`../../myproblem/docs/batched-agent-work.md`](../../myproblem/docs/batched-agent-work.md)) |
 | Later | Artists, caretakers, other local services | Same dossier pattern |
 | Careful | Health / vet / mushrooms | Stop-and-redirect as product; AI lightens ticket load, does not practice medicine/vet medicine |
 

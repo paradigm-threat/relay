@@ -17,6 +17,7 @@ Relay-native, no-salary company: free problem-solving AI → local businesses jo
 | 07 | [07-step-by-step.md](07-step-by-step.md) | Phased checklist from paper → pilot → raise |
 | 08 | [08-realtime-vision-infra-cost.md](08-realtime-vision-infra-cost.md) | Capture→queue→batch; rare Bedrock; 2-region $$$ |
 | 09 | [09-rackspace-spot-vision-prototype.md](09-rackspace-spot-vision-prototype.md) | Spot A30/CPU benches; realtime feed→Problem |
+| 10 | [10-batched-agent-work.md](10-batched-agent-work.md) | **Coming soon:** batched coding/docs/media vs realtime Cursor/Codex; resource needs |
 
 ## Copies
 
