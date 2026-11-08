@@ -13,7 +13,7 @@
 
 ### One-page story
 
-**MyProblem (myproblem.app):** local businesses join at **$0** and stay free — AI triage so unsure customers never clog the phone; when help is needed they get a Problem dossier first. Consumers get free investigation (Spot); after free uses, **consumer priority / payee fees** fund infra. Residual margin distributes. No salaries. Founders paid like any other operator cut on settled/priority volume.
+**MyProblem (myproblem.app):** local businesses join at **$0** and stay free — unsure customers open **tickets** (site link / app: audio + stills), not a phone we answer; when help is needed shops get a Problem dossier first (and may ignore). Consumers get free investigation (Spot); after free uses, **consumer priority / payee fees** fund infra. Residual margin distributes. No salaries. Founders paid like any other operator cut on settled/priority volume. **Future VoIP** (automated into the same ticket pipeline) is a planned, worthwhile infra investment — not in the day-one product.
 
 Say explicitly: this is not a hiring plan; we are **not** a lead-gen company that invoices shops. Their money does not buy a team.
 
@@ -21,7 +21,7 @@ Say explicitly: this is not a hiring plan; we are **not** a lead-gen company tha
 
 - Angels who get **consumer freemium + B2B free distribution** (not classic per-lead SaaS)
 - People who want **LLC distributions**
-- Skip most VC until a metro shows free scans → consumer priority conversion and/or deflected phone load for signed-up shops
+- Skip most VC until a metro shows free scans → consumer priority conversion and/or ticket deflection for signed-up shops (web/app intake; VoIP later)
 
 ### Instrument (simple)
 

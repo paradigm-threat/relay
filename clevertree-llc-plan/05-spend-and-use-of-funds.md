@@ -7,6 +7,7 @@ Assumption: **zero salaries**. Build in Cursor; run on Relay network + existing 
 | Category | What it buys | Priority |
 |---|---|---|
 | **Infrastructure** | Backbone vision/LLM (Bedrock rare escalate), **object storage for ticket audio + stills** (prefer **Bunny** or peer for $/GB; S3-compatible OK — do not pin blobs on Relay nodes), bandwidth, SMS/phone verify, push, error monitoring | P0 — real burn of free campaign; storage scales with anon tickets |
+| **Inbound VoIP (future)** | Twilio-class / SIP minutes so shop-published numbers land in the **same automated ticket pipeline** (speech → Evidence → Project). **Not** a staffed call center. Worth funding once web/app tickets prove quality — fully automatable, metered spend, fits zero-payroll | P2 until tickets+Projects are proven; then P1 as growth infra |
 | **Spot / bench GPUs** | Rackspace Spot (SJC A30, IAD/LON CPU) for prototypes **and long-term free-tier vision pool** | P0 early + ongoing free burn |
 | **Reliable GPU / CPU** | On-demand, reserved, or local/colo for **paid** tier SLA | P1 when monetizing |
 | **Relay / mesh ops** | Keep fleet healthy; domains/TLS; maybe extra capacity if case photos spike | P0 |
@@ -50,6 +51,11 @@ Order of burn (illustrative, not a raise ask):
 4. Store listings / domain / TLS  
 5. Small local ads **only after** organic pilot shows dossier→bid  
 6. Reserve for chargebacks and refunds of junk leads  
+7. **Later:** inbound VoIP minutes + recording storage — only after ticket intake is solid; pitch as automatable infra that turns dial-by-habit customers into the same tickets (see `02-vision-product.md`)  
+
+## Clarification: we do not take shop phone calls today
+
+SMS/phone verify in the table is **account / anti-abuse**, not answering the plumber’s line. Business relief today = **website → MyProblem ticket** (audio + stills). VoIP answering is explicitly **future**.
 
 ## Founder “pay”
 

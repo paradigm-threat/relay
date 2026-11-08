@@ -11,7 +11,7 @@ Contact: **ari@asu.edu**. Coming-soon repos: GitLab `clevertree/myproblem` (depl
 
 A Georgia LLC that runs a **Relay-native investigation service**: problem-solving AI (image, chat, voice) that helps people get as far as they can alone, then packages a dossier so a **local business** can help **before** any meeting — or so the person never needs to call at all.
 
-**Local businesses sign up at $0 application / $0 subscription.** Preferred stance: **free for businesses forever.** They use MyProblem as a front door for uncertain customers and as AI triage so routine “should I…?” questions never hit the secretary / front desk.
+**Local businesses sign up at $0 application / $0 subscription.** Preferred stance: **free for businesses forever.** They use MyProblem as a **web / app front door** for uncertain customers: link the shop site (or QR) to **ticket creation** (audio recording + stills → deferred Project). **We do not answer the business phone line today** — no inbound call-center / VoIP product yet. Same “deflect unsure traffic” outcome without ringing the desk.
 
 No salaries. Investor return rides residual margin from **consumer-side** monetization after free uses (and optional payment-rail fees), not from invoicing shops.
 
@@ -23,12 +23,25 @@ This is the Relay **vision** (companies without salary machinery), not only Rela
 |---|---|
 | **$0 to join** | No application fee, no monthly bill, no lead invoice (default forever-free for the business) |
 | **Zero obligation** | Like a social network: shops may **ignore any request entirely** — no time, not a fit, don’t feel like answering. No SLA, no response timer, no score penalty, no “must choose Accept / Decline.” Silence is a valid outcome. |
-| **Funnel for the unsure** | People who are not ready to book still get structured advice; when they are ready, the business already has the Problem dossier |
-| **Lighter front desk** | Many “call the vet / call the shop” loops are questions AI can triage or redirect better than a phone tree — those people never reach the secretary |
+| **Funnel for the unsure** | People who are not ready to book still get structured advice via **tickets** (app / site link); when they are ready, the business already has the Problem dossier |
+| **Lighter front desk (no phone answering)** | Replace “call the shop first” loops with **website → MyProblem ticket** (nearly identical: speak the problem as audio, add photos). Staff are not interrupted by those rings. **Not** a phone tree we staff or AI that answers inbound PSTN/VoIP calls — that is a future investment |
 | **Redirect when needed** | Legal stops + “call emergency / see a licensed pro” baked in; MyProblem is not a replacement for licensed care |
 | **Ready when it is real** | If the case needs them, they open a tip with photos + AI notes already done — bid, accept, decline, **or leave it unread** |
 
-Example (vet / clinic / trade): receptionist today fields “is this urgent?” and “what do I do until Monday?” MyProblem absorbs the repeatable layer; staff see fewer tire-kickers and warmer handoffs.
+Example (vet / clinic / trade): today the receptionist fields “is this urgent?” and “what do I do until Monday?” on the phone. With MyProblem, the shop site sends those people into a ticket instead — staff see fewer tire-kickers and warmer handoffs, without us picking up the line.
+
+## Future: inbound VoIP (planned investment)
+
+**Today:** tickets only (app, web, business-site deep link / QR) — audio + stills capture; no MyProblem-operated phone number for the shop.
+
+**Want:** optional **VoIP / telephony** (Twilio-class or peer) so a published shop number or SIP trunk can land in the **same automated ticket pipeline** — speech → ticket → Project — with legal stops and no human call center.
+
+Why it is worth investor / plan spend later:
+
+- Fully automatable once tickets + Projects work (ASR → Evidence → queue → batch).
+- Closes the gap for customers who still dial by habit; keeps businesses on the free, zero-obligation model.
+- Cost is metered infra (minutes + storage), not salaries — fits the zero-payroll Relay vision.
+- Do **not** buy VoIP before ticket quality and merchant ignore/accept UX are proven on web/app intake.
 
 ## Problems, not chats
 
@@ -75,7 +88,7 @@ Investigations **mint and maintain public docs** for **Georgia and Israel only**
 3. Ticket packaged → default **start Project** (deferred investigation) and/or submit to merchant.
 4. AI may recommend **combine** or **split**; user confirms.
 5. Problem-oriented AI only. Legal stops on every update. Timeline is the one-stop shop.
-6. Often: Project → `ai_resolved` — never needed the business phone line.
+6. Often: Project → `ai_resolved` — person never needed to ring the shop (and we never answered a phone for them).
 7. When not: local business gets the **Problem tip** and can bid / accept / decline — **or ignore it entirely** (no obligation).
 8. After handshake, the deal is between them. Ignoring never creates a bill or a duty.
 9. Hard cases escalate inside the Project worker (frontier / other LLMs / web); answer written onto the Problem.
@@ -87,7 +100,7 @@ Investigations **mint and maintain public docs** for **Georgia and Israel only**
 |---|---|---|
 | Pilot | Home repair (plumbing / appliance), simple glasses/frame; optionally one clinic/vet-style triage partner | Photo + “should I call?” load |
 | Later | Artists, caretakers, other local services | Same dossier pattern |
-| Careful | Health / vet / mushrooms | Stop-and-redirect as product; AI lightens phone, does not practice medicine/vet medicine |
+| Careful | Health / vet / mushrooms | Stop-and-redirect as product; AI lightens ticket load, does not practice medicine/vet medicine |
 
 ## Who pays (and who does not)
 
@@ -124,7 +137,7 @@ Businesses stay on the free tooling path unless they *choose* a paid priority ad
 - ADA / older adults from day one.
 - Trust = work + legal stop on screen.
 - Combine/split confirmable in plain language.
-- Business dashboard: incoming Problems, triage stats (“deflected from phone”), accept/decline — no invoice page by default.
+- Business dashboard: incoming Problems, triage stats (“deflected from call-first habit via tickets”), accept/decline/ignore — no invoice page by default. No claim that we answered their phone.
 
 ## Economic machine (no salaries)
 

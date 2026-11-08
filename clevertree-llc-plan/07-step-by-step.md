@@ -61,12 +61,13 @@ See [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype
 
 ## Phase 3 — Georgia soft launch
 
-1. Pitch 5–15 local businesses: **$0 application, free forever** — phone-load relief + dossier when real  
+1. Pitch 5–15 local businesses: **$0 application, free forever** — website→ticket deflection (we do **not** answer their phone yet) + dossier when real; zero obligation to reply  
+
 2. Zero billing setup for them; dashboard for incoming Problems / deflect stats  
 3. Seed consumers with no ads (friends, Nextdoor carefully, local groups)  
 4. Log: scans, solo close (never called the shop), dossiers sent, opens, accepts, consumer priority conversions, backbone $  
 
-**Exit criteria to expand:** businesses stay because front desk is lighter; consumers resolve alone or hand off with a file; cost per useful scan known without invoicing shops.
+**Exit criteria to expand:** businesses stay because unsure traffic lands in tickets instead of ringing the desk; consumers resolve alone or hand off with a file; cost per useful scan known without invoicing shops. Revisit **inbound VoIP** only after that loop is proven.
 
 ## Phase 4 — Israel soft launch
 
