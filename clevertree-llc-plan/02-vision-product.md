@@ -3,8 +3,8 @@
 ## Brand
 
 **MyProblem** — product domain **myproblem.app** (registered 2026-11-07; Namecheap → Vercel DNS; live at https://myproblem.app).  
-Georgia LLC name: prefer **MyProblem, LLC** or **My Problem LLC** after SOS check; DBA **MyProblem** if the legal string needs a designator tweak.  
-Earlier brand lean (**clevertree.ai**) is retired — do not buy it for this product. AZ Clevertree Solutions history is entity-only, not the public name.  
+**Legal entity:** **Clevertree LLC** (Georgia, new filing — not a revival of AZ Clevertree Solutions). Public brand stays MyProblem; optional DBA **MyProblem**. GA eCorp Clevertree search returned no hits (2026-11-08).  
+Earlier brand lean (**clevertree.ai**) is retired as a product domain. AZ Clevertree Solutions history is terminated entity-only.  
 Contact: **ari@asu.edu**. Coming-soon repos: GitLab `clevertree/myproblem` (deploy) · GitHub `paradigm-threat/myproblem` (mirror).
 
 ## What MyProblem is
@@ -154,4 +154,4 @@ Founders take per-settlement / per-priority operator cuts — not a salary pile.
 
 ## Entity
 
-Arizona Clevertree Solutions, LLC was terminated (2022). Form a **new Georgia LLC** under **MyProblem** naming, new EIN, bank, processor. Domain **myproblem.app** is registered and live. Do not revive the Arizona filing; do not reuse Clevertree as the consumer brand.
+Arizona Clevertree Solutions, LLC was terminated (2022). Form a **new Georgia LLC** named **Clevertree LLC**, new EIN, bank, processor; consumer brand remains **MyProblem** / myproblem.app. Do not revive the Arizona filing.

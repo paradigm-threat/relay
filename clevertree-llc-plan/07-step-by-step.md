@@ -14,7 +14,8 @@ Ordered path from “docs on disk” to GA + Israel pilot to optional raise.
 - [x] Rackspace Spot prototype plan (`09-rackspace-spot-vision-prototype.md`)  
 - [x] Brand lean: **MyProblem** / **myproblem.app** (businesses $0 forever preferred; clevertree.ai retired)  
 - [x] Register **myproblem.app** + coming-soon site on Vercel (GitLab deploy)  
-- [ ] Georgia SOS name search for MyProblem LLC  
+- [x] Georgia SOS name search for **Clevertree** (2026-11-08: no data found; confirm at filing)  
+- [ ] Registered agent + file Articles for **Clevertree LLC**  
 - [ ] One-page investor teaser (after pilot metrics, or soft pre-ask)  
 
 ## Phase 0.5 — Rackspace Spot vision benchmarks (before / parallel to entity polish)
@@ -32,11 +33,11 @@ See [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype
 
 ## Phase 1 — Entity and rails
 
-1. Confirm Georgia LLC name available  
-2. File Articles of Organization; appoint registered agent  
-3. EIN; business bank account  
+1. ~~Confirm Georgia LLC name available~~ — **Clevertree LLC** (search clear 2026-11-08; re-check at file)  
+2. File Articles of Organization for **Clevertree LLC**; appoint registered agent  
+3. EIN; business bank account; optional DBA **MyProblem**  
 4. Draft operating agreement (no-salary + distribution + Relay license language)  
-5. Privacy policy + terms (legal stops, not a clinic, photo retention)  
+5. Privacy policy + terms (Terms live; privacy still open; not a clinic; photo retention)  
 6. Basic insurance quote  
 7. Stripe (or similar) account in LLC name — test mode  
 

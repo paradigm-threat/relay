@@ -10,11 +10,11 @@
 
 ## Name
 
-1. Preferred public brand: **MyProblem** with domain **myproblem.app** (registered; live on Vercel).  
-2. Search [Georgia Corporations Division](https://ecorp.sos.ga.gov) for **MyProblem**, My Problem, MyProblem Solutions, variants.  
-3. Arizona Clevertree history does **not** reserve any name in Georgia and is not the consumer brand.  
-4. If exact LLC name is taken, file a distinguishable legal name and DBA **MyProblem**.  
-5. Optional defensive: other TLDs later; **myproblem.app** is the public face.
+1. **Legal entity (chosen):** **Clevertree LLC** (Georgia) — restart; not a revival of Arizona Clevertree Solutions, LLC.  
+2. **Public product brand:** **MyProblem** / **myproblem.app** (registered; live on Vercel). File DBA **MyProblem** after formation if you want that trade name on bank/processor paperwork.  
+3. **SOS search (2026-11-08):** eCorp business search for Clevertree variants returned **No data found** (logged-in Contains search). SOS UI notes that search is **not** an official name-availability reservation — still confirm at filing.  
+4. Arizona Clevertree history does **not** reserve any name in Georgia.  
+5. Optional defensive: other TLDs later; **myproblem.app** remains the public face.
 
 ## Formation checklist (typical domestic LLC)
 
@@ -49,11 +49,11 @@ Unless the deal says otherwise: membership interest in the **Georgia LLC** (prod
 
 | Day | Action |
 |---|---|
-| 0 | Name search + registered agent decision |
-| 1 | File Articles; pay fee |
+| 0 | ~~Name search~~ (Clevertree — no GA hits 2026-11-08) + **registered agent decision** ← next |
+| 1 | File Articles of Organization for **Clevertree LLC**; pay fee |
 | 1–5 | Approval / entity number (often fast online) |
-| Same week | EIN, bank, draft operating agreement |
-| Before public pilot | Processor, privacy policy, terms, insurance binder |
+| Same week | EIN, bank, draft operating agreement; optional DBA MyProblem |
+| Before public pilot | Processor, privacy policy (Terms live on myproblem.app), insurance binder |
 
 ## Israel note
 
