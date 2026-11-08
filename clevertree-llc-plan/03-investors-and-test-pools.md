@@ -21,7 +21,19 @@ Say explicitly: this is not a hiring plan; we are **not** a lead-gen company tha
 
 - Angels who get **consumer freemium + B2B free distribution** (not classic per-lead SaaS)
 - People who want **LLC distributions**
+- Partners who will run **compatible local hardware** on the **same ticket fabric** (world network) — not forkers who want a private incompatible clone
 - Skip most VC until a metro shows free scans → consumer priority conversion and/or ticket deflection for signed-up shops (web/app intake; VoIP later)
+
+### World network — intent (not a deal yet)
+
+Public site + Terms state **intent only** (no offer / no signed obligations until a separate contract):
+
+- Hardware / region investors must keep stacks **interoperable** with the shared MyProblem / Relay ticket system so Problems stay findable under the same conditions everywhere.
+- **No splintering** into walled or incompatible networks — that defeats the vision.
+- **Fees mostly to local hardware handlers**; center stays zero-payroll posture.
+- Early adopters may later need a written agreement; the website pitch alone does not create one.
+
+Canonical public copy: https://myproblem.app/#investors · https://myproblem.app/terms §10.
 
 ### Instrument (simple)
 
