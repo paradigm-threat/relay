@@ -49,10 +49,10 @@ Unless the deal says otherwise: membership interest in the **Georgia LLC** (prod
 
 | Day | Action |
 |---|---|
-| 0 | ~~Name search~~ (Clevertree — no GA hits 2026-11-08) + **registered agent decision** ← next |
-| 1 | File Articles of Organization for **Clevertree LLC**; pay fee |
-| 1–5 | Approval / entity number (often fast online) |
-| Same week | EIN, bank, draft operating agreement; optional DBA MyProblem |
+| 0 | ~~Name search~~ (Clevertree — no GA hits 2026-11-08) |
+| 1 | ~~File Articles~~ — **Clevertree LLC** submitted on eCorp **2026-11-08** (Ari Asulin, RA @ 310 Kinzie Ave, Savannah; NAICS Software Publishers 513210). Awaiting acceptance email + certificate |
+| 1–5 | Approval / control number — watch `ari@asu.edu` / Dashboard |
+| Same week after accept | EIN, bank, draft operating agreement; optional DBA MyProblem |
 | Before public pilot | Processor, privacy policy (Terms live on myproblem.app), insurance binder |
 
 ## Israel note
