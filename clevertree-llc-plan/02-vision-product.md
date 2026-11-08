@@ -22,10 +22,11 @@ This is the Relay **vision** (companies without salary machinery), not only Rela
 | Promise | Detail |
 |---|---|
 | **$0 to join** | No application fee, no monthly bill, no lead invoice (default forever-free for the business) |
+| **Zero obligation** | Like a social network: shops may **ignore any request entirely** — no time, not a fit, don’t feel like answering. No SLA, no response timer, no score penalty, no “must choose Accept / Decline.” Silence is a valid outcome. |
 | **Funnel for the unsure** | People who are not ready to book still get structured advice; when they are ready, the business already has the Problem dossier |
 | **Lighter front desk** | Many “call the vet / call the shop” loops are questions AI can triage or redirect better than a phone tree — those people never reach the secretary |
 | **Redirect when needed** | Legal stops + “call emergency / see a licensed pro” baked in; MyProblem is not a replacement for licensed care |
-| **Ready when it is real** | If the case needs them, they open a tip with photos + AI notes already done — bid, accept, or decline |
+| **Ready when it is real** | If the case needs them, they open a tip with photos + AI notes already done — bid, accept, decline, **or leave it unread** |
 
 Example (vet / clinic / trade): receptionist today fields “is this urgent?” and “what do I do until Monday?” MyProblem absorbs the repeatable layer; staff see fewer tire-kickers and warmer handoffs.
 
@@ -75,8 +76,8 @@ Investigations **mint and maintain public docs** for **Georgia and Israel only**
 4. AI may recommend **combine** or **split**; user confirms.
 5. Problem-oriented AI only. Legal stops on every update. Timeline is the one-stop shop.
 6. Often: Project → `ai_resolved` — never needed the business phone line.
-7. When not: local business gets the **Problem tip** and can bid / accept / decline.
-8. After handshake, the deal is between them.
+7. When not: local business gets the **Problem tip** and can bid / accept / decline — **or ignore it entirely** (no obligation).
+8. After handshake, the deal is between them. Ignoring never creates a bill or a duty.
 9. Hard cases escalate inside the Project worker (frontier / other LLMs / web); answer written onto the Problem.
 10. Public lessons → region KB update; optional channel post (place / Wi-Fi locality) without exposing secrets.
 
@@ -93,7 +94,8 @@ Investigations **mint and maintain public docs** for **Georgia and Israel only**
 ### Businesses — preferred: free forever
 
 - **$0 application, $0 subscription, $0 per-lead bill** as the default product promise.
-- ROI for them is **time saved** + **warmer bookings**, not a SaaS invoice.
+- **No obligation to respond.** Inbox is social-feed shaped: engage when it is a fit; **ignore** when busy or uninterested. Product must never imply every tip requires Accept / Call / Decline.
+- ROI for them is **time saved** + **warmer bookings**, not a SaaS invoice or a lead quota.
 - Charging businesses later is **optional and dangerous** to the pitch — only revisit if consumer economics cannot cover infra and investors demand it. If revisited: never surprise; never “bait free then claw back leads.” Prefer optional **priority/reliable compute** the *business* buys for *their* customers, not a tax on every lead.
 
 ### Consumers (people with Problems)
