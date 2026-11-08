@@ -42,13 +42,14 @@ Token budget is an implementation detail of “how we compile the brief,” not 
 
 | Piece | Choice |
 |---|---|
-| Problem file | One Relay tip/repo per Problem (Jira-like ID); tip = dossier providers open |
+| Problem file | One Relay tip/repo per Problem (`ticket_uuid`); tip = dossier SoT providers open |
 | Combine/split | Git-friendly: move evidence paths, write `related:` links, close superseded Problem |
 | Hosting UI | Park / SSR on relay-gateway or thin client-web app talking to gateway |
-| Auth | Phone OTP + minimal account; Relay keys/signing where we already have patterns |
-| Media | Evidence as thin blobs; do not pin multi-GB junk on every node |
-| Chat/voice | Ephemeral input → Evidence/event; **not** a parallel source of truth |
-| Billing | **Outside** Relay (Stripe etc.) — Relay has no card billing today |
+| Auth | **Anon by default** (UUID + device claim / APK local backup); optional **free** secret recover email or free register; phone OTP when needed — see myproblem `docs/anonymous-tickets.md` |
+| Media | Audio + stills in **cheap object store** (Bunny prefer; S3-compatible OK); tip holds URI + hash only — **no video files**; do not pin multi-MB audio on every node |
+| Queue | Thin index (Neon/Redis) for Project / ASR job leases — not a second dossier |
+| Chat/voice | Ephemeral input → Evidence/event; **not** a parallel source of truth; first ASR + LLM retranscription gate |
+| Billing | **Outside** Relay (Stripe etc.) — Relay has no card billing today; recover/register stay $0 |
 
 **Pros:** Matches vision; portable dossier; context = Problem; we already operate fleet.  
 **Cons:** We own uptime; must design photo size and brief-compiler carefully.

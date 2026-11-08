@@ -48,11 +48,11 @@ Lifecycle (ticket-like): `open` → `packaged` → `project_queued` / `project_r
 
 Canonical product doc: [`../../myproblem/docs/projects.md`](../../myproblem/docs/projects.md).
 
-**No on-demand frontier LLM or premium vision.** Smart-enough realtime AI **captures** questions / requirements / photos, then **queues a JIRA-like ticket by status**. Deep research is a **Project**: batch workers drain ASAP and investigate completely — **advanced photo analysis and generation** via Hugging Face / Spot at minimal cost (cache/KB first). **Bedrock / other frontier** = rare backbone escalate ([`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md)). Merchant submit stays available anytime. Bot, humans, and providers write the **same ticket timeline** (app ± email).
+**No on-demand frontier LLM or premium vision.** Smart-enough realtime AI **captures** questions / requirements / **stills** (no server video) + **audio**, then **queues a JIRA-like ticket by status**. Tickets are **anonymous by default** (server `ticket_uuid`; APK local backup; warn: lose phone → lose tickets). **Free** secret recover email or register for durable access ([`../../myproblem/docs/anonymous-tickets.md`](../../myproblem/docs/anonymous-tickets.md)). Dossier = **Relay tip**; audio/stills in cheap object store (Bunny prefer). Deep research is a **Project**: batch ASAP — HF/Spot VL + optional gen; **Bedrock** = rare escalate ([`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md)). Merchant submit anytime. Same ticket timeline for bot / humans / providers.
 
 | Mode | Job |
 |---|---|
-| Realtime | Smart-enough intake — SEND frames + coach; not live Sonnet / live imggen |
+| Realtime | Smart-enough intake — stills + coach; audio Evidence; not live Sonnet / video upload |
 | **Project (primary)** | Batch investigate ASAP + completely; HF/Spot VL + optional diagram gen |
 | Backbone escalate | Rare Bedrock/API on unique misses; cache gold |
 | Merchant | Optional handoff; updates stay on the Problem |

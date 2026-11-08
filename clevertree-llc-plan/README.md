@@ -13,7 +13,7 @@ Relay-native, no-salary company: free problem-solving AI → local businesses jo
 | 03 | [03-investors-and-test-pools.md](03-investors-and-test-pools.md) | How to raise; GA + Israel pilots |
 | 04 | [04-georgia-llc.md](04-georgia-llc.md) | Forming the new GA LLC (not reviving AZ) |
 | 05 | [05-spend-and-use-of-funds.md](05-spend-and-use-of-funds.md) | Infra, ads, stores; $0 salaries |
-| 06 | [06-infrastructure.md](06-infrastructure.md) | Problem store, brief compiler, Relay-first, backbones |
+| 06 | [06-infrastructure.md](06-infrastructure.md) | Relay tip SoT, anon UUID, Bunny/S3 media, backbones |
 | 07 | [07-step-by-step.md](07-step-by-step.md) | Phased checklist from paper → pilot → raise |
 | 08 | [08-realtime-vision-infra-cost.md](08-realtime-vision-infra-cost.md) | Capture→queue→batch; rare Bedrock; 2-region $$$ |
 | 09 | [09-rackspace-spot-vision-prototype.md](09-rackspace-spot-vision-prototype.md) | Spot A30/CPU benches; realtime feed→Problem |

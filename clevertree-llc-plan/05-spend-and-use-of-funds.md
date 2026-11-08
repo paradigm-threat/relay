@@ -6,7 +6,7 @@ Assumption: **zero salaries**. Build in Cursor; run on Relay network + existing 
 
 | Category | What it buys | Priority |
 |---|---|---|
-| **Infrastructure** | Backbone vision/LLM (Bedrock or similar), object storage / case blobs if not all on mesh, bandwidth, SMS/phone verify, push, error monitoring | P0 — real burn of free campaign |
+| **Infrastructure** | Backbone vision/LLM (Bedrock rare escalate), **object storage for ticket audio + stills** (prefer **Bunny** or peer for $/GB; S3-compatible OK — do not pin blobs on Relay nodes), bandwidth, SMS/phone verify, push, error monitoring | P0 — real burn of free campaign; storage scales with anon tickets |
 | **Spot / bench GPUs** | Rackspace Spot (SJC A30, IAD/LON CPU) for prototypes **and long-term free-tier vision pool** | P0 early + ongoing free burn |
 | **Reliable GPU / CPU** | On-demand, reserved, or local/colo for **paid** tier SLA | P1 when monetizing |
 | **Relay / mesh ops** | Keep fleet healthy; domains/TLS; maybe extra capacity if case photos spike | P0 |
