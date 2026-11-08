@@ -59,8 +59,8 @@ Raising first for maximum spread is possible only if labeled clearly as a **grow
 
 | Pool | Why | What to prove |
 |---|---|---|
-| **Georgia** | Home of the LLC, English product, US rails, trades you can recruit | Free scans completed; % AI-only close; % dossier; providers who open file; bids; settled jobs |
-| **Israel** | Second culture/language; brother as local operator | Hebrew/simple UI trust; local licensing norms; same metrics with on-ground provider recruitment |
+| **Georgia** | Home of the LLC, English product, US rails, trades you can recruit | Free scans completed; % AI-only close; % dossier; providers who open file; bids; settled jobs. Compete vs Thumbtack/Angi + ChatGPT/Gemini DIY ([`01-competition.md`](01-competition.md)). |
+| **Israel** | Second culture/language; brother as local operator; **denser AI→pro app scene** (Hendiman, DontSearch, AI Trust, Midrag) | Hebrew/simple UI trust; local licensing norms; same metrics + win on deferred Projects / local KB vs hire-first AI apps. Same global LLM substitutes as US. |
 
 ### Brother’s role (Israel)
 

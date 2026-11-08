@@ -111,3 +111,4 @@ Raise materials: one pager + this folder + live metrics from Phases 3–4. Instr
 | 2026-11-07 | **Shared local KB** + place / Wi-Fi channels | GA/Israel only; redacted public docs; see myproblem `docs/knowledge-base.md` |
 | 2026-11-07 | No on-demand frontier; Bedrock = rare batch escalate | Capture → queue → batch ASAP; see `docs/backbone-escalate.md` |
 | 2026-11-07 | Anon tickets + Relay tip SoT + Bunny/S3 audio | Free recover email; no server video; see `docs/anonymous-tickets.md` |
+| 2026-11-07 | Israel competition refresh in `01` | Hendiman / DontSearch / AI Trust; LLM stack same as US |

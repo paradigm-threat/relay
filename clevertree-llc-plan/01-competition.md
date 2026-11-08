@@ -11,8 +11,8 @@ A free, no-card, problem-oriented AI that:
 - Is **not** a general “everything LLM”
 - Monetizes later via settled provider connections, not consumer subscriptions
 
-**Last researched:** 2026-11-07  
-**Status:** No product found that matches this exact stack end-to-end for free without a card.
+**Last researched:** 2026-11-07 (US stack) · **2026-11-07 Israel refresh** (Hebrew AI-pro apps + LLM adoption)  
+**Status:** No product found that matches this exact stack end-to-end (anon tickets, deferred Projects, place-tied KB, businesses $0 forever, Relay tip). Israel has **more** AI→local-pro apps than Georgia.
 
 ---
 
@@ -24,10 +24,11 @@ A free, no-card, problem-oriented AI that:
 | Free unlimited general chat AI? | **Yes** (ChatGPT Free text; Gemini Free text — tool quotas still apply). |
 | Free generous / “unlimited” consumer image *search*? | **Closest: Google Lens** (visual search, not a case file + local bid). |
 | Free real-time problem-solving camera loop for trades + health + nature + dossier handoff? | **Not found.** |
-| Closest paid / freemium stack? | **Thumbtack AI** (photo/voice → scope → pros), **Fixt / Fixxy**-class apps, **JustAnswer** (humans, paid). |
+| Closest paid / freemium stack? | **US:** Thumbtack AI, Angi, Fixt/Fixxy. **Israel:** Hendiman, DontSearch, AI Trust, Spetz/Shpitz-class. |
 | Free vertical specialists? | **Seek / iNaturalist** (nature), **Ada** (symptom triage), **Lens** (lookup). Each is narrow. |
+| Israel vs Georgia competition density? | **Israel denser** on Hebrew AI→handyman apps; **Georgia** competes more with Thumbtack/Angi + DIY LLM. |
 
-Our wedge is not “another chat model.” It is **service-oriented investigation**: image-first, legal stops, dossier, local bid — free for the consumer until habit forms, no card wall.
+Our wedge is not “another chat model.” It is **service-oriented investigation**: capture → queue → batch Projects, legal stops, dossier, local bid, place-tied KB — free for the consumer until habit forms, no card wall, businesses $0 forever.
 
 ---
 
@@ -72,6 +73,36 @@ Pieces exist. The combination does not.
 - **What they do:** Local help / gigs / posts. Little or no serious free AI image investigation.  
 - **Threat level:** **Low** as AI products; **Medium** as “find a person” substitutes when users skip investigation entirely.
 
+### Israel — AI + local pro (Tier A for IL pilot)
+
+Hebrew-first apps that combine **AI intake** with **local בעלי מקצוע**. Closer to the *marketplace half* of MyProblem than most Georgia-local products. Still **hire-first**, not deferred thorough Projects + place-tied KB + Relay tip + businesses free forever.
+
+| Player | What they claim | Overlap | Threat (IL) |
+|---|---|---|---|
+| **[Hendiman](https://handimanapp.live/about)** | Describe/voice/photos → AI scopes job + price estimate → nearby pros bid; free for consumers; pros subscribe | High — AI intake + local handoff | **High** |
+| **[DontSearch](https://www.dontsearch.com/)** | AI Q&A → fan-out to large pro network; free, no card; large provider claims | High as matchmaker; thin investigation product | **High** |
+| **[AI Trust](https://trust-ai.site/)** | Photo/voice diagnosis, DIY tips, safety redirects, quotes from verified pros; free tier ~15 AI scans/mo, paid unlock | Closest **investigate + handoff** shape; quota/sub | **High** |
+| **Spetz Tech** (phone NLP, e.g. *2144) | Call, describe fault in Hebrew → dispatch matching pro in ~1 min | Voice triage → pro; no ticket/KB story | **Medium** |
+| **Shpitz** (shpitz.ai, coming soon) | Agent finds/calls pros, negotiates, follows through | Concierge marketplace | **Medium** (watch) |
+| **Midrag / Yad2 Professionals** | Incumbent reviews/directories (Thumbtack/Angi-class discovery) | Supply + trust; little AI investigation | **Medium** as habit / supply |
+
+**Not found in Israel either:** full MyProblem stack (anon UUID tickets, batch Projects, no on-demand frontier, Bunny/S3 Evidence, local GA/IL knowledge base, channels, shops $0 forever).
+
+---
+
+## Georgia vs Israel — market posture
+
+| | **Georgia (USA)** | **Israel** |
+|---|---|---|
+| Marketplace incumbents | Thumbtack, Angi; TaskRabbit / Nextdoor edges | Midrag, Yad2 Pros; WhatsApp-heavy coordination |
+| AI → local pro apps | Thin vs national Thumbtack AI | **Crowded:** Hendiman, DontSearch, AI Trust, Spetz/Shpitz |
+| DIY baseline | ChatGPT / Gemini + then call a pro | Same LLM stack + Midrag/WhatsApp + local AI apps |
+| Market size | Larger home-services lead market; higher CAC | Smaller but denser; Hebrew UX mandatory |
+| Pilot friction | English, US rails, LLC home | Hebrew/bilingual UI; local licensing norms; brother on ground |
+| Primary substitute story | “Ask ChatGPT then Thumbtack” | “Ask ChatGPT/Gemini **or** open Hendiman/AI Trust” |
+
+**Pilot implication:** IL competition narrative must name **Hendiman / DontSearch / AI Trust / Midrag**, not only Thumbtack. GA narrative stays Thumbtack/Angi + LLM DIY. Wedge in both: **thorough deferred investigation + local KB**, not a better general chatbot or faster pro lead form.
+
 ---
 
 ## Tier B — Free AI chat / vision (no card), but not our product
@@ -81,20 +112,29 @@ Pieces exist. The combination does not.
 - **No card** for Free tier.  
 - **Text:** Everyday chats effectively unlimited (abuse safeguards).  
 - **Images / files:** Free capped at about **3 file uploads per day** (official upload help); images up to 20 MB. Voice and other tools have separate limits.  
-- **Fits us?** Strong free *advisor* for a few photos/day. **Fails** “full-time real-time scanning,” case dossier for providers, and local bid. General LLM, not service-ops UI.  
-- **Threat level:** **High for “just ask the AI” substitutes**; **Low for our full loop.**
+- **Fits us?** Strong free *advisor* for a few photos/day. **Fails** batch Projects, case dossier for providers, place-tied KB, and local bid. General LLM, not service-ops UI.  
+- **Threat level:** **High for “just ask the AI” substitutes**; **Low for our full loop.**  
+- **IL + US:** Same product; ChatGPT remains the default DIY assistant in both markets (IL surveys: ~75% of AI users cite ChatGPT).
 
 ### Google Gemini Free
 
 - **No card** for free assistant access.  
 - Image / live camera conversation available; **quotas change** by model and demand (not a published “unlimited scan” product).  
 - **Fits us?** Same pattern as ChatGPT: free help with limits; no provider dossier marketplace.  
-- **Threat level:** Same as ChatGPT.
+- **Threat level:** Same as ChatGPT.  
+- **IL:** Fast-rising second tool (~42% of AI users in Bezeq-class 2025 reporting; strong with teens).
+
+### Grok (xAI)
+
+- Consumer free/paid tiers via X; smaller share than ChatGPT/Gemini in US and IL surveys.  
+- **Fits us?** Another general assistant substitute — not a local service ticket product.  
+- **Threat level:** Low–medium as DIY chat; **not** a local-pro network.
 
 ### Claude / other free consumer LLMs
 
-- Free tiers exist with **rate limits**; not positioned as unlimited real-time field scanning + local trades.  
-- **Threat level:** Low–medium substitute for text advice.
+- Free tiers exist with **rate limits**; not positioned as unlimited field scanning + local trades.  
+- **Threat level:** Low–medium substitute for text advice.  
+- **IL note:** Anthropic geographic data has shown **very high Claude use per capita** in Israel (small tech-forward market); still not a Midrag/Hendiman substitute.
 
 ### Microsoft Copilot / Bing Visual Search
 
@@ -162,7 +202,8 @@ Pieces exist. The combination does not.
 | Visual search | Yes (Lens) | Effectively generous | No | No |
 | Nature ID | Yes (Seek) | Generous | Narrow | No |
 | Symptom triage | Yes (Ada) | Free consumer | Health only | Care routing, not trade bids |
-| Home photo → pro | Thumbtack / Angi (homeowner) | Not “unlimited AI product” | Partial project scope | **Yes** (marketplace) |
+| Home photo → pro (US) | Thumbtack / Angi (homeowner) | Not “unlimited AI product” | Partial project scope | **Yes** (marketplace) |
+| Home photo → pro (IL) | Hendiman / DontSearch / AI Trust | Free consumer paths; pro sub or paid tiers | Partial diagnose + match | **Yes** (marketplace) |
 | **Our full stack** | — | Planned | Planned | Planned |
 
 **Bottom line on “is there full image scanning for free?”**  
@@ -229,21 +270,38 @@ Our planned shape: **live preview on device → clarity/uniqueness gate → spar
 
 ## Competitive risks to watch
 
-1. **Thumbtack/Angi** ship “good enough” photo→pro and own the pro graph.  
+1. **Thumbtack/Angi** (US) and **Hendiman / DontSearch / AI Trust** (IL) ship “good enough” photo/voice→pro and own or rent pro graphs.  
 2. **Google** deepens Lens + Gemini into a continuous camera agent (still unlikely to become a local bid network soon).  
-3. **OpenAI** raises Free image limits or ships a “camera mode” that eats casual use.  
-4. **Freemium ID apps** race to the bottom on price but stay subscription-shaped.  
-5. **Regulation** in health/fungi advice forces everyone (including us) into stop-and-redirect — advantage to whoever designs stops as product.
+3. **OpenAI** raises Free image limits or ships a “camera mode” that eats casual use — same risk in GA and IL.  
+4. **Israeli AI-pro startups** race on Hebrew UX + WhatsApp-adjacent habits before we have supply.  
+5. **Freemium ID apps** race to the bottom on price but stay subscription-shaped.  
+6. **Regulation** in health/fungi advice forces everyone (including us) into stop-and-redirect — advantage to whoever designs stops as product.
+
+---
+
+## LLM adoption — same stack in GA and Israel?
+
+**Yes — same global assistants; Israel is not “behind.”** If anything, consumer AI familiarity is high in both, and IL per-capita use of some tools (e.g. Claude) has ranked among the world’s highest for a small tech economy.
+
+| Signal | US / Georgia context | Israel |
+|---|---|---|
+| Primary DIY LLMs | ChatGPT, Gemini, Copilot; Grok smaller | ChatGPT dominant; Gemini rising fast; Claude/Grok smaller share |
+| Adult LLM / AI use | ~half of US adults use LLMs (2025 surveys) | High awareness/use in Bezeq-class internet reports; Microsoft adoption index ~34% adults (country rank mid-teens) |
+| Threat to MyProblem | High for casual advice; low for full ticket/Project/KB loop | **Same**, plus local AI-pro apps already wrapping AI→pro |
+
+Do **not** assume IL users need “education that AI exists.” Assume they already tried ChatGPT/Gemini and maybe Hendiman — pitch **local KB + thorough deferred Projects + free shops**.
 
 ---
 
 ## Implications for GA + Israel pilots
 
-- Measure against **Lens + ChatGPT Free** as the DIY baseline (“user already can do something for free”).  
-- Measure against **Thumbtack** only in home verticals where pros exist.  
-- Do **not** claim unique “free AI”; claim unique **free investigation loop + dossier handoff + no-card depth for problem-solving scans**.  
+- Measure against **Lens + ChatGPT/Gemini Free** as the DIY baseline in **both** regions.  
+- **Georgia:** measure against **Thumbtack/Angi** in home verticals.  
+- **Israel:** measure against **Hendiman, DontSearch, AI Trust, Midrag** (+ WhatsApp “ask a group”) — not Thumbtack alone.  
+- Do **not** claim unique “free AI”; claim unique **free investigation loop** (capture → queue → batch) **+ dossier handoff + place-tied KB + no-card depth + businesses $0**.  
 - Health: treat Ada-class triage as partner/redirect, not something to out-diagnose.  
-- Nature: Seek is the free bar for mushrooms; our value is legal stop + when to involve a human + dossier if needed.
+- Nature: Seek is the free bar for mushrooms; our value is legal stop + when to involve a human + dossier if needed.  
+- IL product: Hebrew/bilingual strings early; expect denser local AI-pro noise.
 
 ---
 
@@ -255,6 +313,8 @@ Our planned shape: **live preview on device → clarity/uniqueness gate → spar
 - Google Lens: free consumer visual search; Cloud Vision separate/paid  
 - Seek by iNaturalist; Ada Health consumer free tier  
 - JustAnswer pricing (paid membership; photo to expert)  
-- Specialty ID app store listings (daily free caps / subscriptions)
+- Specialty ID app store listings (daily free caps / subscriptions)  
+- **Israel (2026-11-07 desk research):** Hendiman (handimanapp.live); DontSearch; AI Trust (trust-ai.site); Spetz Tech / StartIsrael phone-NLP coverage; Shpitz (shpitz.ai); Midrag / Yad2 Professionals  
+- **LLM geography:** Anthropic Economic Index / AUI (IL high Claude per capita); Microsoft AI Diffusion-style adoption rankings; Bezeq Israel internet/AI usage reporting 2025; Elon University US LLM survey 2025
 
 *Re-check upload caps and Thumbtack launch status before any investor PDF; these change without notice.*
