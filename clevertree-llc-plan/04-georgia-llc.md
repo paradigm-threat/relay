@@ -47,11 +47,28 @@ Unless the deal says otherwise: membership interest in the **Georgia LLC** (prod
 
 ## Timeline (rough)
 
+## Filing record (from Gmail / eCorp)
+
+| Field | Value |
+|---|---|
+| Entity | **Clevertree LLC** (Domestic LLC, Georgia) |
+| Submitted | **2026-11-08** (eCorp online) |
+| Filer / RA | Ari Raphael Asulin — 310 Kinzie Ave, Savannah, GA 31404 |
+| eCorp User ID | **Protricity** |
+| Primary email on filing | ari@asu.edu (secondary ari.asulin@gmail.com) |
+| NAICS | Information → Software Publishers (**513210**) |
+| SOS confirmation | Email from `ecorp.noreply@sos.ga.gov` to **ari.asulin@gmail.com** — *Business Formation* — filing successfully submitted; acceptance + certificate to follow (or reject + refile instructions) |
+| Receipt PDF | Attached on that mail as `2026110813934270-13905450.pdf` (open in Gmail for receipt / confirmation numbers) |
+| Status (as of 2026-11-08 evening) | **Submitted / under review** — no separate “accepted + Certificate of Organization” email yet in Gmail |
+| Next | Watch Gmail + eCorp Dashboard for accept/reject; then EIN + bank |
+
+## Timeline (rough)
+
 | Day | Action |
 |---|---|
 | 0 | ~~Name search~~ (Clevertree — no GA hits 2026-11-08) |
-| 1 | ~~File Articles~~ — **Clevertree LLC** submitted on eCorp **2026-11-08** (Ari Asulin, RA @ 310 Kinzie Ave, Savannah; NAICS Software Publishers 513210). Awaiting acceptance email + certificate |
-| 1–5 | Approval / control number — watch `ari@asu.edu` / Dashboard |
+| 1 | ~~File Articles~~ — submitted eCorp **2026-11-08** (see Filing record above) |
+| 1–5 | **Await acceptance + certificate** — Gmail / Dashboard |
 | Same week after accept | EIN, bank, draft operating agreement; optional DBA MyProblem |
 | Before public pilot | Processor, privacy policy (Terms live on myproblem.app), insurance binder |
 

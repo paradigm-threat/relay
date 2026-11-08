@@ -15,7 +15,8 @@ Ordered path from “docs on disk” to GA + Israel pilot to optional raise.
 - [x] Brand lean: **MyProblem** / **myproblem.app** (businesses $0 forever preferred; clevertree.ai retired)  
 - [x] Register **myproblem.app** + coming-soon site on Vercel (GitLab deploy)  
 - [x] Georgia SOS name search for **Clevertree** (2026-11-08: no data found; confirm at filing)  
-- [x] File Articles for **Clevertree LLC** on eCorp (2026-11-08 — pending Corporations Division review / certificate email)  
+- [x] File Articles for **Clevertree LLC** on eCorp (2026-11-08) — SOS confirmation email + receipt PDF on `ari.asulin@gmail.com`; eCorp user **Protricity**  
+- [ ] **Acceptance + Certificate of Organization** (not yet in Gmail as of 2026-11-08 evening)  
 - [ ] EIN + business bank after acceptance  
 - [ ] One-page investor teaser (after pilot metrics, or soft pre-ask)  
 
@@ -35,7 +36,7 @@ See [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype
 ## Phase 1 — Entity and rails
 
 1. ~~Confirm Georgia LLC name available~~ — **Clevertree LLC**  
-2. ~~File Articles~~ — submitted eCorp 2026-11-08; **await acceptance + certificate**  
+2. ~~File Articles~~ — submitted eCorp 2026-11-08 (confirmed by SOS email); **still awaiting acceptance + certificate**  
 3. EIN; business bank account; optional DBA **MyProblem**  
 4. Draft operating agreement (no-salary + distribution + Relay license language)  
 5. Privacy policy + terms (Terms live; privacy still open; not a clinic; photo retention)  
