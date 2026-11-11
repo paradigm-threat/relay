@@ -68,7 +68,7 @@ See [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype
 
 2. Zero billing setup for them; dashboard for incoming Problems / deflect stats  
 3. Seed consumers with no ads (friends, Nextdoor carefully, local groups)  
-4. Log: scans, solo close (never called the shop), dossiers sent, opens, accepts, consumer priority conversions, backbone $  
+4. Log: scans, solo close (never called the shop), dossiers sent, opens, accepts, voluntary gratuities, backbone $  
 
 **Exit criteria to expand:** businesses stay because unsure traffic lands in tickets instead of ringing the desk; consumers resolve alone or hand off with a file; cost per useful scan known without invoicing shops. Revisit **inbound VoIP** only after that loop is proven.
 

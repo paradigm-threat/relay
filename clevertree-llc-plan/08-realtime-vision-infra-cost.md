@@ -211,12 +211,12 @@ Skip self-host GPU; every kept frame → cheap API VL; 10% → frontier.
 | 5+ | Add **~$600–1,500/mo** for 2× L4/A10G frame factories when volume or latency hurts |
 | Campaign | Cap frontier escalate %; budget **$2.5k–9k/mo** vision all-in at high free volume |
 
-Spot GPU hours are for **proving** the realtime frame→OCR→VL path **and**, in production, the **free-tier pool** (interruptible; show “busy” when demand/reclaim hits). **Paid** traffic should sit on reliable capacity (on-demand / reserved / local colo) so monetized users are not competing with Spot reclaim.
+Spot GPU hours are for **proving** the realtime frame→OCR→VL path **and**, in production, the pool everyone uses (interruptible; show “busy” when demand/reclaim hits). Reliable capacity (on-demand / reserved / local colo) is extra machines when gifts cover them. There is no paid lane.
 
-| Tier | Infra $ shape |
+| Capacity | Infra $ shape |
 |---|---|
-| Free | Spot market — scales with free usage; fails soft when market tight |
-| Paid | Steady reliable burn — smaller user count, higher willingness to pay |
+| Everyone | Spot market — scales with use; fails soft when the market is tight. A busy queue is a wait. |
+| Extra machines | Steady reliable burn when gifts cover it. Not a paid user tier. |
 
 ---
 

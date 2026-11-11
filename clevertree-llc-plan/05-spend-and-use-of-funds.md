@@ -10,13 +10,13 @@ Assumption: **zero salaries**. Build in Cursor; run on Relay network + existing 
 | **Inbound VoIP (future)** | Twilio-class / SIP minutes so shop-published numbers land in the **same automated ticket pipeline** (speech → Evidence → Project). **Not** a staffed call center. Worth funding once web/app tickets prove quality — fully automatable, metered spend, fits zero-payroll | P2 until tickets+Projects are proven; then P1 as growth infra |
 | **Spot / bench GPUs** | Rackspace Spot (SJC A30, IAD/LON CPU) for prototypes **and long-term free-tier vision pool** | P0 early + ongoing free burn |
 | **Batched agent scratch** (coming soon) | Larger ephemeral disks / longer Spot leases for clone+test or encode jobs; coding-model tokens; tear-down after publish — **not** a realtime IDE fleet ([`10-batched-agent-work.md`](10-batched-agent-work.md)) | P1 as coding/docs/media Projects open |
-| **Reliable GPU / CPU** | On-demand, reserved, or local/colo for **paid** tier SLA | P1 when monetizing |
+| **Reliable GPU / CPU** | On-demand, reserved, or local/colo when gifts cover more capacity. Still no user paywall | P1 if gratuities support it |
 | **Relay / mesh ops** | Keep fleet healthy; domains/TLS; maybe extra capacity if case photos spike | P0 |
 | **App store / platform fees** | Apple / Google developer accounts, store cut on any IAP later (prefer no consumer IAP) | P1 |
 | **Advertising** | Only after pilot metrics; GA + Israel local; avoid burning cash before cost-per-settled-case is known | P2 (pilot: near zero) |
 | **Formation & compliance** | GA LLC fee, registered agent, operating agreement lawyer pass, privacy/terms, insurance | P0 at start |
-| **Payments** | Processor fees, reserves, chargebacks on provider fees | P1 when monetizing |
-| **Per-case humans** | Brother bounty / cut in Israel; later licensed consults paid from settlement | P1 in pilot |
+| **Payments** | Processor fees on voluntary gratuities, if we ever take them. No card is required to use the product | Later, when a tip control exists |
+| **Per-case humans** | Paid only when someone tips that person. Not a salary and not a required settlement fee | When gifts exist |
 | **Accessibility / design** | Not a salary — time in Cursor; optional contractor paid per deliverable if needed | As needed |
 | **Salaries / office / benefits** | **$0** by design | — |
 
@@ -30,17 +30,17 @@ Assumption: **zero salaries**. Build in Cursor; run on Relay network + existing 
 
 ## Monetization caution
 
-Prefer **consumer payee / priority fees** after free uses. Keeping businesses free forever is a feature of the pitch. Only study shop-side fees if consumer economics cannot carry Spot + reliable pools — and treat that as Plan B with explicit founder/investor consent.
+The service is free forever for shops and for people. No subscription, and no fee after a quota. A gratuity is voluntary, after a good experience, for the person, the AI, or both. Even $1 a month from everyone would ask people the product did not help, and would likely raise less than gifts from people it did. Do not study a shop invoice as a backup.
 
 ## Campaign math (fill with real numbers)
 
 ```
 monthly_backbone + sms + storage + ads
-───────────────────────────────────────  must fall under
-provider_fee × settled_matches_per_month
+───────────────────────────────────────  is carried by
+voluntary gratuities + the raise
 ```
 
-Free scans that never match are paid for by the settled minority. Loose fraud is a **planned** tax on the left side.
+Help that nobody tips is still help. A missing gift is not a failed invoice. Loose fraud is a **planned** tax on the left side.
 
 ## Use-of-funds sketch for a small angel check
 

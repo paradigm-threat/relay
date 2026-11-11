@@ -9,7 +9,7 @@ A free, no-card, problem-oriented AI that:
 - States legal stops every time
 - Hands a full investigation dossier (photos + AI notes) to a local provider who can bid or decline before any meeting
 - Is **not** a general “everything LLM”
-- Monetizes later via settled provider connections, not consumer subscriptions
+- Stays free. A voluntary gratuity can thank the person, the AI, or both. Not a consumer subscription, and not a shop invoice
 
 **Last researched:** 2026-11-07 (US stack) · **2026-11-07 Israel refresh** (Hebrew AI-pro apps + LLM adoption)  
 **Status:** No product found that matches this exact stack end-to-end (anon tickets, deferred Projects, place-tied KB, businesses $0 forever, Relay tip). Israel has **more** AI→local-pro apps than Georgia.

@@ -2,7 +2,7 @@
 
 **Brand:** MyProblem — **[myproblem.app](https://myproblem.app)** (registered; Vercel)
 
-Relay-native, no-salary company: free problem-solving AI → local businesses join at **$0** (prefer free forever) → consumer priority/payee fees after free uses → no payroll pool.
+Relay-native, no-salary company: free problem-solving AI forever → no card expected → a voluntary gratuity for the person, the AI, or both → no subscription and no payroll pool.
 
 ## Documents
 

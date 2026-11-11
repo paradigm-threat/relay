@@ -13,9 +13,9 @@ A Georgia LLC that runs a **Relay-native investigation service**: problem-solvin
 
 **Local businesses sign up at $0 application / $0 subscription.** Preferred stance: **free for businesses forever.** They use MyProblem as a **web / app front door** for uncertain customers: link the shop site (or QR) to **ticket creation** (audio recording + stills → deferred Project). **We do not answer the business phone line today** — no inbound call-center / VoIP product yet. Same “deflect unsure traffic” outcome without ringing the desk.
 
-No salaries. Investor return rides residual margin from **consumer-side** monetization after free uses (and optional payment-rail fees), not from invoicing shops.
+No salaries, and no subscription. A user should never expect to enter a credit card. Compensation is a **gratuity** for the person who helped, the AI that helped, or both — the way good work has been rewarded for millennia. A gift to the AI keeps the hosting running. Part of a gratuity to a person, or a second gift, can do the same. Investor return, if any, rides residual from those voluntary gifts, not from invoicing shops or from a monthly fee.
 
-This is the Relay **vision** (companies without salary machinery), not only Relay **infrastructure**. Relay carries Problem tips. The LLC owns the product, processor, and splits.
+This is the Relay **vision** (companies without salary machinery, and without subscription machinery), not only Relay **infrastructure**. Relay carries Problem tips. In this file, “Problem tip” is the git record. “Gratuity” is the money. The LLC owns the product.
 
 ## Pitch to local businesses (zero application)
 
@@ -113,26 +113,25 @@ The KB is a **git repo of Markdown** (Paradigm Threat patterns: **category folde
 - **$0 application, $0 subscription, $0 per-lead bill** as the default product promise.
 - **No obligation to respond.** Inbox is social-feed shaped: engage when it is a fit; **ignore** when busy or uninterested. Product must never imply every tip requires Accept / Call / Decline.
 - ROI for them is **time saved** + **warmer bookings**, not a SaaS invoice or a lead quota.
-- Charging businesses later is **optional and dangerous** to the pitch — only revisit if consumer economics cannot cover infra and investors demand it. If revisited: never surprise; never “bait free then claw back leads.” Prefer optional **priority/reliable compute** the *business* buys for *their* customers, not a tax on every lead.
+- A shop may leave a gratuity after a good experience. It is never required, and we do not plan a paid add-on.
 
 ### Consumers (people with Problems)
 
-- Free uses with no card (Spot pool; “busy” when demand spikes).
-- After free depth: **payee / consumer fee** for continued or priority use (reliable pool) — this is the careful monetization surface.
-- Optional: small platform fee on **consumer→business payment** if/when MyProblem hosts checkout — framed as payment processing, not “we sold your name to the shop.”
+- Free forever. No card expected. The same help if they cannot leave a gift.
+- If the help was good, a gratuity for the person, the AI, or both. Any time, any amount. $1, $5, and $10 are examples, not prices.
+- A busy queue is a wait, not a paywall.
 
 ### Unlimited AI
 
-= unlimited for **solving problems** in-product, not a general everything-LLM. Soft rate limits and Spot capacity still apply on free.
+= unlimited for **solving problems** in-product, not a general everything-LLM. Soft rate limits and Spot capacity still apply. Hitting a limit does not ask for a card.
 
-## Capacity tiers (Spot vs reliable)
+## Capacity
 
-| Tier | Compute | When busy |
+| Who | Compute | When busy |
 |---|---|---|
-| **Free** (default consumers + all business tooling) | Rackspace **Spot** | “High demand — free scanning temporarily unavailable.” Preview may stay live. |
-| **Paid consumer priority** | Reliable pool (on-demand / reserved / local colo) | No Spot dead-end; higher rate limits |
+| Everyone (people and shops) | Rackspace **Spot**, and reliable capacity when gifts cover it | “High demand — scanning is busy. Try again in a few minutes.” Preview may stay live. |
 
-Businesses stay on the free tooling path unless they *choose* a paid priority add-on for their branded funnel (optional later).
+There is no paid lane. Reliable machines are something we run when we can afford them, not something a user buys.
 
 ## UX principles
 
@@ -147,14 +146,13 @@ Businesses stay on the free tooling path unless they *choose* a paid priority ad
 
 | Path | Who pays | Who gets paid |
 |---|---|---|
-| Solo AI / triage | Nobody (growth burn) or later consumer priority fee | Backbone + Spot as cost |
-| Business signup & tooling | **Nobody** (forever-free preference) | — |
-| Consumer priority after free uses | Consumer (payee fee) | Infra residual → LLC distributions |
-| Optional hosted checkout | Small % on payment rail | Same residual path |
-| Investor | Capital in | Preferred return then profit share from residual |
+| Solo AI / triage | Nobody is billed | Backbone + Spot as cost |
+| Business signup and tooling | **Nobody** | — |
+| Gratuity after a good experience | Whoever was helped, only if they want to. Person, AI, or both | The person who helped, and/or hosting (including local hardware) |
+| Investor | Capital in | Preferred return then profit share from whatever gifts remain |
 
-Founders take per-settlement / per-priority operator cuts — not a salary pile.  
-**Do not** build the investor model on “we will start billing plumbers and vets in year two” unless that is an explicit, reluctant Plan B.
+Founders are not on a salary. Any later draw is a private note in the investor docs, not a public fee.  
+**Do not** build the investor model on subscriptions, on a fee after free uses, or on “we will start billing plumbers and vets.”
 
 ## Entity
 

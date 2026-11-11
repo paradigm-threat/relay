@@ -153,7 +153,7 @@ ingest + rate limit ┤
 | Overflow | Never steal paid capacity for free by default; optional “donate spare paid headroom to free” is a flag, off in scarce times |
 | API escalate | Can stay shared with stricter free quotas; or paid-only for frontier |
 
-UI copy (product, not ops jargon): “Free scanners are busy right now. Try again in a few minutes, or unlock priority scanning.”
+UI copy (product, not ops jargon): “Scanners are busy right now. Try again in a few minutes.” A busy queue is a wait, not a card prompt.
 
 ## Cost control switches
 
@@ -161,10 +161,10 @@ UI copy (product, not ops jargon): “Free scanners are busy right now. Try agai
 |---|---|
 | Daily scan budget per account | Soft cap after free depth; still no card — queue or “come back tomorrow” beats surprise bill |
 | Free → Spot only | Keeps free burn tied to cheap interruptible $/hr |
-| Paid → reliable pool | Predictable latency; justifies subscription or provider fee |
+| Reliable pool | Capacity we run when gifts cover it. Not a subscription and not a paid lane |
 | Escalate rate limit | Most cases stay on cheap model |
 | Explain-image gen off by default | On only when user taps “show me” |
-| Provider free-tool quota | Mirrors consumer free uses |
+| Same free path for shops | No card after a quota |
 
 ## Build inventory (Relay / Cursor)
 
