@@ -141,9 +141,9 @@ On-demand GPU ($7.25/hr) only if Spot reclaim blocks the sprint — avoid for mu
 
 ## Production note (after prototype)
 
-Keep Spot as the **free plan** vision pool: when Spot is reclaimed or at capacity, the app says free scanning is unavailable due to demand (camera preview may continue; uploads wait). Route **paid** accounts to reliable workers so revenue users are not on interruptible iron.
+Keep Spot as the **everyone** vision/batch pool (**no paid lane** — [`../../myproblem/docs/batch-phases.md`](../../myproblem/docs/batch-phases.md)): when Spot is reclaimed or at capacity, the app says scanning/investigation is busy due to demand (camera preview may continue; uploads enqueue). Reliable capacity is only what gifts cover — same users.
 
-Prototype should still exercise a fake `free_pool` vs `paid_pool` flag so the unavailable path is tested early.
+Prototype should exercise the **unavailable / enqueue** path early (busy copy), not a paid-tier bypass.
 
 ## Explicit non-goals for this prototype
 

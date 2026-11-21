@@ -138,20 +138,23 @@ This is how we claim better “real-time scanning” than “3 uploads/day to a 
 - Health-adjacent: minimize; prefer redirect over storing clinical chat.  
 - Israel/EU users: expect stricter rules — consult before scale.
 
-## Capacity pools: free → Spot, paid → reliable
+## Capacity pools: everyone → Spot (no paid lane)
+
+**Locked with product SoT:** [`../../myproblem/docs/batch-phases.md`](../../myproblem/docs/batch-phases.md) — there is **no paid compute lane**.
 
 ```
-                    ┌─ free_pool ─── Spot GPU/CPU (bid market, reclaim OK)
-ingest + rate limit ┤
-                    └─ paid_pool ─── on-demand / reserved / local colo (sticky)
+ingest + rate limit ──► Spot GPU/CPU (bid market, reclaim OK)
+                              │
+                              └── optional reliable capacity when gifts cover it
+                                  (same users — not a subscription tier)
 ```
 
 | Rule | Behavior |
 |---|---|
-| Route by account tier | Free jobs only schedule on `free_pool`; paid on `paid_pool` |
-| Spot reclaim / no capacity | Free: return clear **capacity unavailable** (not a silent hang). Paid: unaffected if reliable pool healthy |
-| Overflow | Never steal paid capacity for free by default; optional “donate spare paid headroom to free” is a flag, off in scarce times |
-| API escalate | Can stay shared with stricter free quotas; or paid-only for frontier |
+| Route | Everyone schedules on Spot (and reliable machines when we can afford them) |
+| Spot reclaim / no capacity | Return clear **capacity unavailable** / enqueue Project — not a silent hang |
+| API escalate | Shared with quotas; never “pay for frontier live” |
+| Product phases | Phase 1 Cursor-as-batch; Phase 2 Spot worker — Intake cache+enqueue only for repo writes |
 
 UI copy (product, not ops jargon): “Scanners are busy right now. Try again in a few minutes.” A busy queue is a wait, not a card prompt.
 
@@ -160,8 +163,8 @@ UI copy (product, not ops jargon): “Scanners are busy right now. Try again in 
 | Switch | Effect |
 |---|---|
 | Daily scan budget per account | Soft cap after free depth; still no card — queue or “come back tomorrow” beats surprise bill |
-| Free → Spot only | Keeps free burn tied to cheap interruptible $/hr |
-| Reliable pool | Capacity we run when gifts cover it. Not a subscription and not a paid lane |
+| Spot first | Keeps burn tied to cheap interruptible $/hr |
+| Reliable pool | Capacity we run when gifts cover it — same users, not a paid lane |
 | Escalate rate limit | Most cases stay on cheap model |
 | Explain-image gen off by default | On only when user taps “show me” |
 | Same free path for shops | No card after a quota |

@@ -62,7 +62,7 @@ Lifecycle (ticket-like): `open` → `packaged` → `project_queued` / `project_r
 
 Canonical product doc: [`../../myproblem/docs/projects.md`](../../myproblem/docs/projects.md).
 
-**No on-demand frontier LLM or premium vision.** Smart-enough realtime AI **captures** questions / requirements / **stills** (no server video) + **audio**, then **queues a JIRA-like ticket by status**. Tickets are **anonymous by default** (server `ticket_uuid`; APK local backup; warn: lose phone → lose tickets). **Free** secret recover email or register for durable access ([`../../myproblem/docs/anonymous-tickets.md`](../../myproblem/docs/anonymous-tickets.md)). Dossier = **Relay tip**; audio/stills in cheap object store (Bunny prefer). Deep research is a **Project**: batch ASAP — **KB git first**, HF/Spot VL + optional gen + allowed browser research; **Bedrock** = rare escalate after miss, then KB distill ([`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md) · [`../../myproblem/docs/knowledge-base.md`](../../myproblem/docs/knowledge-base.md)). Merchant submit anytime. Same ticket timeline for bot / humans / providers.
+**No on-demand frontier LLM or premium vision.** Smart-enough realtime AI **captures** questions / requirements / **stills** (no **realtime** server video; deferred Batch inbox OK) + **audio**, then **queues a JIRA-like ticket by status** on always-on Intake (**cache + enqueue**; tip/KB commits in batch — [`../../myproblem/docs/batch-phases.md`](../../myproblem/docs/batch-phases.md)). Tickets are **anonymous by default** (server `ticket_uuid`; APK local backup; warn: lose phone → lose tickets). **Free** secret recover email or register for durable access ([`../../myproblem/docs/anonymous-tickets.md`](../../myproblem/docs/anonymous-tickets.md)). Dossier = **Relay tip** (private remotes); audio/stills via **Bunny** (per-repo upload source). Deep research is a **Project**: batch ASAP (Phase 1 Cursor / Phase 2 Spot) — **KB git first**, HF/Spot VL + optional gen + allowed browser research; **Bedrock** = rare escalate after miss, then KB distill ([`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md) · [`../../myproblem/docs/knowledge-base.md`](../../myproblem/docs/knowledge-base.md)). Merchant submit anytime. Same ticket timeline for bot / humans / providers.
 
 | Mode | Job |
 |---|---|
@@ -105,6 +105,17 @@ The KB is a **git repo of Markdown** (Paradigm Threat patterns: **category folde
 | Parallel (KB now / product soon) | **Batched agent work** — coding, networking, docs/office, heavy media pipelines; nearly-free websites | **Not** realtime Cursor/Codex: queue → thorough finish → notify. KB website path today; product soon ([`10-batched-agent-work.md`](10-batched-agent-work.md) · [`../../myproblem/docs/batched-agent-work.md`](../../myproblem/docs/batched-agent-work.md)) |
 | Later | Artists, caretakers, other local services | Same dossier pattern |
 | Careful | Health / vet / mushrooms | Stop-and-redirect as product; AI lightens ticket load, does not practice medicine/vet medicine |
+
+## Virtues
+
+Shared Clevertree / Relay list (also on myproblem.app):
+
+| Virtue | Meaning |
+|---|---|
+| **Max and simple** | Full help behind few modes. Free for everyone — anonymous first, no paywall. Free forever — no fee later. Not developer-shaped compartments, and not a premium tier. |
+| **Thorough over instant** | Deferred Projects wait for capacity. |
+| **No card expected** | Using the service never becomes a bill. |
+| **Silence is allowed** | A shop may ignore a request. |
 
 ## Who pays (and who does not)
 

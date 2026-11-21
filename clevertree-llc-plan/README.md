@@ -4,6 +4,15 @@
 
 Relay-native, no-salary company: free problem-solving AI forever → no card expected → a voluntary gratuity for the person, the AI, or both → no subscription and no payroll pool.
 
+## Virtues
+
+| Virtue | Meaning |
+|---|---|
+| **Max and simple** | Full help behind few modes. Free for everyone — anonymous first, no paywall or restricted tier. Free forever — no fee later, no subscription trap. Not a maze shaped for developers, and not locked behind premium. |
+| **Thorough over instant** | Deferred Projects wait for capacity so investigations stay complete. |
+| **No card expected** | Using the service never becomes a bill. Tips are voluntary after good help. |
+| **Silence is allowed** | A shop may ignore a request. No timer, no score, no duty to answer. |
+
 ## Documents
 
 | # | File | Contents |
@@ -31,6 +40,8 @@ Sync:
 ```bash
 rsync -a --delete ~/dev/relay/clevertree-llc-plan/ /mnt/nobiserv/clevertree-llc-plan/
 ```
+
+**Product batch SoT (phases, Cursor, shared queue):** [`../../myproblem/docs/batch-phases.md`](../../myproblem/docs/batch-phases.md)
 
 ## Related context (not in this folder)
 

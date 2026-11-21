@@ -1,6 +1,8 @@
 # Batched agent work — coding, networking, documents, media (vs realtime IDEs)
 
-**Status:** **Major coming-soon product bet.** Knowledge and website copy should already advertise it. **Not shipped** as a self-serve MyProblem ticket type yet — it rides the same **Project / Intake / Spot batch** architecture as investigation.
+**Status:** **Major coming-soon product bet.** Knowledge and website copy should already advertise it. **Not shipped** as a self-serve MyProblem ticket type yet — it rides the same **Project / Intake / batch** architecture as investigation.
+
+**Phases:** Product Phase 1 = Cursor-as-batch on the shared queue; Phase 2 = Spot — see [`../../myproblem/docs/batch-phases.md`](../../myproblem/docs/batch-phases.md) · [`../../myproblem/docs/cursor-batch-playbook.md`](../../myproblem/docs/cursor-batch-playbook.md).
 
 Canonical product note: [`../../myproblem/docs/batched-agent-work.md`](../../myproblem/docs/batched-agent-work.md).  
 Related: [`02-vision-product.md`](02-vision-product.md) · [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype.md) · [`05-spend-and-use-of-funds.md`](05-spend-and-use-of-funds.md) · [`../../myproblem/docs/coding-and-websites.md`](../../myproblem/docs/coding-and-websites.md).

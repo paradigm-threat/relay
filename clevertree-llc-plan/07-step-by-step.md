@@ -2,6 +2,8 @@
 
 Ordered path from “docs on disk” to GA + Israel pilot to optional raise.
 
+**Product batch phases (SoT):** [`../../myproblem/docs/batch-phases.md`](../../myproblem/docs/batch-phases.md) — Phase 1 Cursor-as-batch (shared queue, all Relay sites); Phase 2 Spot go-live. LLC phase numbers below are entity/pilot checklist; do not confuse LLC “Phase 2 build” with product Spot go-live.
+
 ## Phase 0 — Paper (now)
 
 - [x] Competition landscape (`01-competition.md`)  
@@ -22,7 +24,7 @@ Ordered path from “docs on disk” to GA + Israel pilot to optional raise.
 
 ## Phase 0.5 — Rackspace Spot vision benchmarks (before / parallel to entity polish)
 
-See [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype.md), MyProblem MVP [`../../myproblem/docs/spot-ai-mvp.md`](../../myproblem/docs/spot-ai-mvp.md) (SEND frames, Relay `relay.ai.*` flags, free vs paid pool), and **Projects** [`../../myproblem/docs/projects.md`](../../myproblem/docs/projects.md) (deferred batch investigation = primary server path; realtime = ticket capture only).
+See [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype.md), MyProblem MVP [`../../myproblem/docs/spot-ai-mvp.md`](../../myproblem/docs/spot-ai-mvp.md) (SEND frames, Relay `relay.ai.*` flags; **no paid lane**), **Projects** [`../../myproblem/docs/projects.md`](../../myproblem/docs/projects.md), and product [`../../myproblem/docs/batch-phases.md`](../../myproblem/docs/batch-phases.md).
 
 1. Spin Spot **IAD CPU** (ingest/keyframes) + **SJC GPU A30** (`gpu.vs2.xlargeplusplus-sjc`, ~$0.15/hr spot)  
 2. Optional **LON CPU** for Israel/EU RTT  
@@ -46,10 +48,10 @@ See [`09-rackspace-spot-vision-prototype.md`](09-rackspace-spot-vision-prototype
 ## Phase 2 — Build pilot (Cursor + Relay)
 
 1. PWA: **Problem list/detail** — live camera / What is this / Find help / Voice (inputs attach to a Problem)  
-2. **On-device frame gate** (clarity + uniqueness) + **server rate limit** on accepts; route **free → Spot pool** / **paid → reliable pool** with busy copy for free when Spot is down  
-3. Problem schema on **Relay tip** (`ticket_uuid`); thin queue index; **anon default** + free recover email ([`../../myproblem/docs/anonymous-tickets.md`](../../myproblem/docs/anonymous-tickets.md)); Project jobs + InvestigationUpdate; brief compiler  
-4. Realtime agent = **smart-enough capture** (stills only, no video); audio → object store (Bunny prefer); first ASR + LLM retranscription gate  
-5. **Project batch worker** drains status queue ASAP; **KB first**; **Bedrock/frontier** rare escalate after miss → KB write ([`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md) · [`../../myproblem/docs/knowledge-base.md`](../../myproblem/docs/knowledge-base.md))  
+2. **On-device frame gate** (clarity + uniqueness) + **server rate limit** on accepts; everyone on Spot / gifted reliable — busy copy when Spot is down (**no paid lane**)  
+3. Problem schema on **Relay tip** (`ticket_uuid`); Intake **cache + enqueue**; **anon default** + free recover email ([`../../myproblem/docs/anonymous-tickets.md`](../../myproblem/docs/anonymous-tickets.md)); tip/KB git writes only in batch  
+4. Realtime agent = **smart-enough capture** (stills only on live path; deferred video → Batch inbox); audio → Bunny (per-repo upload source); first ASR + LLM retranscription gate  
+5. **Project batch** drains shared queue ASAP — **Phase 1 Cursor**, **Phase 2 Spot**; **KB first**; **Bedrock/frontier** rare escalate after miss → KB write ([`../../myproblem/docs/batch-phases.md`](../../myproblem/docs/batch-phases.md) · [`../../myproblem/docs/backbone-escalate.md`](../../myproblem/docs/backbone-escalate.md))  
 6. Image preprocess + agent returns **Problem patches** + combine/split (coach live; deep patch in Project)  
 7. Each Problem as Relay tip (or Relay-linked store)  
 8. Legal-stop fields on the Problem every update  
@@ -119,5 +121,6 @@ Raise materials: one pager + this folder + live metrics from Phases 3–4. Instr
 | 2026-11-08 | Nearly-free website KB + coding assist planned | Vercel free + DNS; LLM build/deploy; Spot/MCP; MyProblem site-build coming soon |
 | 2026-11-08 | Batched agent work (vs realtime IDE) | Plan `10`: thorough Project coding/docs/render; Spot scratch; major coming-soon site copy |
 | 2026-11-08 | Public **/privacy** + Terms filing-status wording | PII client-held policy on site; Articles pending SOS accept |
-| 2026-11-07 | Anon tickets + Relay tip SoT + Bunny/S3 audio | Free recover email; no server video; see `docs/anonymous-tickets.md` |
+| 2026-11-07 | Anon tickets + Relay tip SoT + Bunny/S3 audio | Free recover email; no **realtime** server video (deferred Batch inbox OK); see `docs/anonymous-tickets.md` |
+| 2026-11-19 | Product batch phases SoT | Phase 1 Cursor-as-batch (shared queue); Phase 2 Spot; no paid lane; see `myproblem/docs/batch-phases.md` |
 | 2026-11-07 | Israel competition refresh in `01` | Hendiman / DontSearch / AI Trust; LLM stack same as US |
